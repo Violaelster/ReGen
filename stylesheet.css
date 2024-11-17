@@ -1,3 +1,140 @@
 * {
-    
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans";
+  margin: 0;
+  padding: 0;
+  background-image: url("/pictures/hero.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: center;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  color: #023439;
+  height: 127px;
+  margin: 0 auto;
+  max-width: 2160px;
+  z-index: 100;
+  width: 100%;
+}
+
+label {
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 59px 23px 14px 23px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  opacity: 0;
+}
+
+span {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  margin: 50px auto 17px 16px;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  margin: 483px auto 68px 58px;
+}
+
+nav.scrolled {
+  background-color: #d9e2e7;
+}
+
+
+
+@media (max-width: 1200px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-care,
+  .favourite {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  nav {
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #d9e2e7;
+    color: #023439;
+    height: 127px;
+    width: 100%;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  label {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 81px 11px 9px 11px;
+  }
+
+  .menu svg,
+  .cart svg,
+  .search svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .product-care,
+  .favourite {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 58px 35px 9px 11px;
+  }
+
+  .hero {
+    margin: 539px 225px 72px 24px;
+    transform: scale(1);
+    flex-shrink: 0;
+  }
 }
