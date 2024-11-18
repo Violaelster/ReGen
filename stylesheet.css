@@ -27,7 +27,8 @@ nav {
   height: 127px;
   margin: 0 auto; 
   z-index: 100;
-  width: 100%;
+  min-width: 100%;
+  
 }
 
 label {
@@ -107,7 +108,6 @@ nav.scrolled {
     align-items: center;
     color: #023439;
     height: 127px;
-    width: 100%;
   }
 
   span {
@@ -116,11 +116,11 @@ nav.scrolled {
 
   label {
     display: flex;
-    padding: 10px;
+    padding: 1px;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin: 81px 11px 9px 11px;
+    margin: 81px 1% 9px 1%;
   }
 
   .menu svg,
@@ -138,7 +138,7 @@ nav.scrolled {
   .logo {
     display: flex;
     align-items: center;
-    margin: 58px 35px 9px 11px;
+    margin: 58px auto 9px 11px;
   }
 
   .hero {
