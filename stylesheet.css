@@ -9,8 +9,11 @@ body {
   background-image: url("/images/hero.png");
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
   overflow: auto;
+}
+
+main {
+  height: 100vh;
 }
 
 /* Landing Page */
@@ -55,7 +58,10 @@ span {
 .hero {
   display: flex;
   justify-content: flex-start;
-  margin: 483px auto 68px 58px;
+  position: relative;
+  margin: 0;
+  top: 483px;
+  left: 58px;
 }
 
 nav.scrolled {
@@ -148,6 +154,34 @@ p {
   right: 0;
 }
 
+.main-bottom {
+  background-color: #FFFFFF;
+  height: 48px;
+  width: 100%;
+  bottom: 0;
+  top: 600px;
+}
+
+/* COUNTDOWN */
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+ 
+  overflow: hidden;
+  
+
+}
+
+.countdown {
+  background-color: #023439;
+  height: 410px;
+  width: 100%;
+}
+
+/* MEDIA QUERIES */
+
 /* Tablet */
 
 @media (max-width: 1200px) {
@@ -233,101 +267,101 @@ p {
 
 
 footer {
-background-color: #023439;
-width:100%;
-position: relative;
-overflow: hidden;
-}
-
-
-.footer-content {
+  background-color: #023439;
+  width:100%;
+  position: relative;
+  overflow: hidden;
+  
+  }
+  
+  
+  .footer-content {
+    background-color:#023439;
+    display: grid; /* Aktiverar grid-layout */
+    grid-template-columns: repeat(2, 1fr); /* Två kolumner med lika stor bredd */
+    grid-gap: 20px; /* Mellanrum mellan sektionerna */
+    max-width: 1200px; /* Begränsar bredden på innehållet */
+    margin: 0 auto; /* Centrerar innehållet i footern */
+    padding: 20px;
+  
+  
+  }
+  
+  .footer-section {
+    text-align: left; /* Justerar texten till vänster */
+  }
+  
+  .footer-bottom {
+    background-color: #ED4E0A;
+    max-height: 50px;
+    display: flex; /* Flexbox för att strukturera bottensektionen */
+    flex-direction: row;
+    justify-content: space-between; /* Sprid innehållet mellan ändarna */
+    align-items: center; /* Centrera vertikalt */
+    padding: 10px 20px;
+  }
+  
+  .footer-settings {
+    display: flex; /* Flexbox för att hålla knapparna på en rad */
+    flex-direction: row; /* Knapparna i en horisontell rad */
+    gap: 10px; /* Mellanrum mellan knapparna */
+  }
+  
+  .footer-section ul {
+    list-style: none; /* Tar bort punkterna */
+    padding: 0; /* Tar bort eventuell inre marginal */
+    margin: 0; /* Tar bort eventuell yttre marginal */
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff; /* Ändra färg på texten (anpassa hex-koden till önskad färg) */
+    text-decoration: none; /* Tar bort understrykningen */
+  }
+  
+  .icon {
+    border-radius: 2px;
+  border: 1px solid var(--text-main, #FFF);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  }
+  
+  .icon-links {
+      display: flex; /* Flexbox för att rada upp ikonerna horisontellt */
+      gap: 10px; /* Mellanrum mellan ikonerna */
+      
+  }
+  
+  button {
+  color:#FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: inline-flex;
+  height: 30px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  border: 1px solid var(--text-main, #FFF);
   background-color:#023439;
-  display: grid; /* Aktiverar grid-layout */
-  grid-template-columns: repeat(2, 1fr); /* Två kolumner med lika stor bredd */
-  grid-gap: 20px; /* Mellanrum mellan sektionerna */
-  max-width: 1200px; /* Begränsar bredden på innehållet */
-  margin: 0 auto; /* Centrerar innehållet i footern */
-  padding: 20px;
+  }
+  
+  .footer-yeti {
+    position: absolute; /* Placera yetin relativt till footern */
+    bottom: 45px; /* Håll den längst ner i footern */
+    right: -78px; /* Flytta yetin delvis utanför skärmen */
+    z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
+  }
 
 
-}
 
-.footer-section {
-  text-align: left; /* Justerar texten till vänster */
-}
-
-.footer-bottom {
-  background-color: #ED4E0A;
-  max-height: 50px;
-  display: flex; /* Flexbox för att strukturera bottensektionen */
-  flex-direction: row;
-  justify-content: space-between; /* Sprid innehållet mellan ändarna */
-  align-items: center; /* Centrera vertikalt */
-  padding: 10px 20px;
-}
-
-.footer-settings {
-  display: flex; /* Flexbox för att hålla knapparna på en rad */
-  flex-direction: row; /* Knapparna i en horisontell rad */
-  gap: 10px; /* Mellanrum mellan knapparna */
-}
-
-.footer-section ul {
-  list-style: none; /* Tar bort punkterna */
-  padding: 0; /* Tar bort eventuell inre marginal */
-  margin: 0; /* Tar bort eventuell yttre marginal */
-}
-
-.footer-section ul li a {
-  color: #ffffff; /* Ändra färg på texten (anpassa hex-koden till önskad färg) */
-  text-decoration: none; /* Tar bort understrykningen */
-}
-
-.icon {
-  border-radius: 2px;
-border: 1px solid var(--text-main, #FFF);
-display: flex;
-width: 40px;
-height: 40px;
-padding: 10px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-}
-
-.icon-links {
-    display: flex; /* Flexbox för att rada upp ikonerna horisontellt */
-    gap: 10px; /* Mellanrum mellan ikonerna */
-    
-}
-
-button {
-color:#FFFFFF;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-display: inline-flex;
-height: 30px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 1px;
-border: 1px solid var(--text-main, #FFF);
-background-color:#023439;
-}
-
-.footer-yeti {
-  position: absolute; /* Placera yetin relativt till footern */
-  bottom: 45px; /* Håll den längst ner i footern */
-  right: -78px; /* Flytta yetin delvis utanför skärmen */
-  z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
-}
-
-.footer-section h3 {
-  color:white;
-}
