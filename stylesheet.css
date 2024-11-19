@@ -271,9 +271,7 @@ footer {
   width:100%;
   position: relative;
   overflow: hidden;
-  
   }
-  
   
   .footer-content {
     background-color:#023439;
@@ -283,8 +281,11 @@ footer {
     max-width: 1200px; /* Begränsar bredden på innehållet */
     margin: 0 auto; /* Centrerar innehållet i footern */
     padding: 20px;
-  
-  
+  }
+
+  .footer-top {
+    background-color: #FFFFFF;
+    height: 48px;
   }
   
   .footer-section {
