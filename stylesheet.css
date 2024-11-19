@@ -241,14 +241,44 @@ width:100%;
 
 .footer-content {
   background-color:#023439;
+  display: grid; /* Aktiverar grid-layout */
+  grid-template-columns: repeat(2, 1fr); /* Två kolumner med lika stor bredd */
+  grid-gap: 20px; /* Mellanrum mellan sektionerna */
+  max-width: 1200px; /* Begränsar bredden på innehållet */
+  margin: 0 auto; /* Centrerar innehållet i footern */
+  padding: 20px;
 
 
+}
+
+.footer-section {
+  text-align: left; /* Justerar texten till vänster */
 }
 
 .footer-bottom {
   background-color: #ED4E0A;
   max-height: 50px;
 
+}
+
+.icon {
+  border-radius: 2px;
+border: 1px solid var(--text-main, #FFF);
+display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+}
+
+.icon-links {
+    display: flex; /* Flexbox för att rada upp ikonerna horisontellt */
+    gap: 10px; /* Mellanrum mellan ikonerna */
+    
 }
 
 button {
