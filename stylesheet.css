@@ -9,7 +9,9 @@ body {
   background-image: url("/images/hero.png");
   background-size: cover;
   background-attachment: fixed;
-  overflow: auto;
+  overflow-x: hidden; /* Förhindrar horisontell scroll */
+  overflow-y: auto; /* Tillåter vertikal scroll */
+  width: 100%;
 }
 
 main {
