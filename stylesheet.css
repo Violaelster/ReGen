@@ -285,6 +285,15 @@ footer {
     padding: 20px;
   }
 
+  .footer-content h3 {
+    color:#FFFFFF;
+    font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 2px 0px;
+  }
+
   .footer-top {
     background-color: #FFFFFF;
     height: 48px;
@@ -319,6 +328,10 @@ footer {
   .footer-section ul li a {
     color: #ffffff; /* Ändra färg på texten (anpassa hex-koden till önskad färg) */
     text-decoration: none; /* Tar bort understrykningen */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
   
   .icon {
@@ -361,10 +374,35 @@ footer {
   
   .footer-yeti {
     position: absolute; /* Placera yetin relativt till footern */
-    bottom: 45px; /* Håll den längst ner i footern */
-    right: -78px; /* Flytta yetin delvis utanför skärmen */
+    bottom: 15%; /* Håll den längst ner i footern */
+    right: -4%; /* Flytta yetin delvis utanför skärmen */
     z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
+    width: 74px;
+    height: 103px;
   }
+
+  footer p {
+    color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+  }
+
+  @media (min-width: 1200px) {
+    .footer-yeti {
+      position: absolute; /* Placera yetin relativt till footern */
+      bottom: 15%; /* Håll den längst ner i footern */
+      right: -4%; /* Flytta yetin delvis utanför skärmen */
+      z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
+      width: 74px;
+      height: 103px;
+    }
+  }
+
+  
+
+
 
 
 
