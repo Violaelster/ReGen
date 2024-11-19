@@ -327,3 +327,7 @@ background-color:#023439;
   right: -78px; /* Flytta yetin delvis utanför skärmen */
   z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
 }
+
+.footer-section h3 {
+  color:white;
+}
