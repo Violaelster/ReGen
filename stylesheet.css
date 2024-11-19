@@ -13,6 +13,8 @@ body {
   overflow: auto;
 }
 
+/* Landing Page */
+
 nav {
   position: fixed;
   top: 0;
@@ -24,7 +26,7 @@ nav {
   color: #023439;
   height: 127px;
   margin: 0 auto;
-  z-index: 100;
+  z-index: 90;
   min-width: 100%;
 }
 
@@ -60,9 +62,97 @@ nav.scrolled {
   background-color: #d9e2e7;
 }
 
+/* Menu */
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 120px;
+  right: -100%;
+  z-index: 99;
+  width: 445px;
+  height: 613px;
+  border: 3px solid #023439;
+  background: #d9e2e7;
+  margin: 1px;
+  transition: 0.75s ease-out;
+  padding: 10px;
+}
+
+.links-container a,
+p {
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+.line {
+  width: 280px;
+  height: 1px;
+  background: #767676;
+  margin: 0 auto 0 34px;
+}
+
+.links-container a {
+  margin: 8px auto 15px 34px;
+  color: #023439;
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 10px;
+}
+
+.language {
+  margin: auto auto 10px 34px;
+  color: #023439;
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 10px;
+}
+
+.link-menu {
+  margin: 36px auto 32px 34px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.links-container a:hover {
+  color: #ed4e0a;
+}
+
+.language:hover {
+  color: #ed4e0a;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .links-container {
+  right: 0;
+}
+
 /* Tablet */
 
 @media (max-width: 1200px) {
+  /* Landing page */
+
   body {
     background-size: cover;
     background-position: center;
@@ -86,6 +176,8 @@ nav.scrolled {
 /* Mobile */
 
 @media (max-width: 600px) {
+  /* Landing page */
+
   body {
     background-size: cover;
     background-position: center;
@@ -139,10 +231,10 @@ nav.scrolled {
   }
 }
 
-.footer {
-background-color:#023439;
-max-height: 299px;
-  
+footer {
+background-color: #023439;
+position: absolute;
+width:100%;
 }
 
 
@@ -175,3 +267,4 @@ border-radius: 1px;
 border: 1px solid var(--text-main, #FFF);
 background-color:#023439;
 }
+>>>>>>> 432a040a9fdf9e713528dd49d187668b5acfd669
