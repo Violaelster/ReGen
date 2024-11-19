@@ -6,12 +6,10 @@ body {
   font-family: "IBM Plex Sans";
   margin: 0;
   padding: 0;
-  background-image: url("/pictures/hero.png");
+  background-image: url("/images/hero.png");
   background-size: cover;
   background-attachment: fixed;
-  background-size: center;
   min-height: 100vh;
-  width: 100vw;
   overflow: auto;
 }
 
@@ -26,25 +24,17 @@ nav {
   color: #023439;
   height: 127px;
   margin: 0 auto;
-  max-width: 2160px;
   z-index: 100;
-  width: 100%;
+  min-width: 100%;
 }
 
 label {
-  display: inline-flex;
+  display: flex;
   padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin: 59px 23px 14px 23px;
-}
-
-.checkbox {
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  opacity: 0;
 }
 
 span {
@@ -70,7 +60,7 @@ nav.scrolled {
   background-color: #d9e2e7;
 }
 
-
+/* Tablet */
 
 @media (max-width: 1200px) {
   body {
@@ -78,11 +68,22 @@ nav.scrolled {
     background-position: center;
   }
 
+  nav {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+
   .product-care,
   .favourite {
     display: none;
   }
+
+  span {
+    font-size: 20px;
+  }
 }
+
+/* Mobile */
 
 @media (max-width: 600px) {
   body {
@@ -93,12 +94,12 @@ nav.scrolled {
   }
 
   nav {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
     justify-content: flex-end;
     align-items: center;
-    background-color: #d9e2e7;
     color: #023439;
     height: 127px;
-    width: 100%;
   }
 
   span {
@@ -106,12 +107,12 @@ nav.scrolled {
   }
 
   label {
-    display: inline-flex;
-    padding: 10px;
+    display: flex;
+    padding: 1px;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin: 81px 11px 9px 11px;
+    margin: 81px 1% 9px 1%;
   }
 
   .menu svg,
@@ -129,143 +130,94 @@ nav.scrolled {
   .logo {
     display: flex;
     align-items: center;
-    margin: 58px 35px 9px 11px;
+    margin: 58px auto 9px 11px;
   }
 
   .hero {
     margin: 539px 225px 72px 24px;
-    transform: scale(1);
     flex-shrink: 0;
   }
 }
 
-.icon-container svg {
-  background-color: black; /* Bara för att testa synligheten */
-}
+/* Reset */
 
   
-footer { 
-  background-color: pink;
-
-
-}
-
-.footer-content {
-  display:flex;
-  flex-direction: row;
-}
-
-.footer-section {
-
-}
-
-.footer-section h3 {
-
-}
-
-.footer-section ul {
-
-}
-
-.footer-section ul li {
-
-}
-
-.footer-section ul li a {
-
-}
-
-.footer-bottom {
-
-}
-
-.footer-bottom p {
-
-}
-
-.settings button {
-
-}
-
-.icon-chatt {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 2px;
-  border: 1px solid #FFF;
-}
-
-.icon-mail {
-display: flex;
-width: 40px;
-height: 40px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 2px;
-border: 1px solid #FFF;
-}
-
-.icon-phone {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 2px;
-  border: 1px solid #FFF;
-}
-
-.icon-facebook {
-  display: flex;
-width: 40px;
-height: 40px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 2px;
-border: 1px solid #FFF;
-}
-
-.footer-bottom {
-  background: #A9A2A2;
-}
-
-.footer-settings button {
-  display: flex;
-width: 65px;
-height: 30px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 2px;
-border: 1px solid #FFF;
-}
-
-.footer-settings button {
-  color: #FFF;
-  background: #A9A2A2;
-
-font-family: "IBM Plex Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-}
-
-
-.language {
+  footer {
+    background-color: #e0e0e0; /* Grå bakgrund */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
   
-}
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Två kolumner */
+    gap: 20px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-icons a,
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .contact-icons img,
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+  }
+  
+  .footer-options button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .footer-options button:hover {
+    background-color: #ddd;
+  }
+  
+  .footer-yeti img {
+    width: 50px;
+    height: auto;
+  }
+  
