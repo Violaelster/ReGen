@@ -139,19 +139,39 @@ nav.scrolled {
   }
 }
 
-footer {
-background-color: #023439;
-position: absolute;
-width:100%;
+.footer {
+background-color:#023439;
+max-height: 299px;
+  
 }
 
+
 .footer-content {
-  background-color: blue;
- 
+  background-color:#023439;
+
+
 }
 
 .footer-bottom {
   background-color: #ED4E0A;
-height: 50px;
+  max-height: 50px;
 
+}
+
+button {
+color:#FFFFFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+display: inline-flex;
+height: 30px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 1px;
+border: 1px solid var(--text-main, #FFF);
+background-color:#023439;
 }
