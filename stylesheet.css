@@ -231,6 +231,7 @@ p {
   }
 }
 
+<<<<<<< HEAD
 /* Footer */
 
 footer {
@@ -311,3 +312,21 @@ footer {
   width: 50px;
   height: auto;
 }
+=======
+footer {
+background-color: #023439;
+position: absolute;
+width:100%;
+}
+
+.footer-content {
+  background-color: blue;
+ 
+}
+
+.footer-bottom {
+  background-color: #ED4E0A;
+height: 50px;
+
+}
+>>>>>>> 432a040a9fdf9e713528dd49d187668b5acfd669
