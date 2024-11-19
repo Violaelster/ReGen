@@ -231,6 +231,7 @@ p {
   }
 }
 
+
 footer {
 background-color: #023439;
 position: absolute;
@@ -267,4 +268,3 @@ border-radius: 1px;
 border: 1px solid var(--text-main, #FFF);
 background-color:#023439;
 }
->>>>>>> 432a040a9fdf9e713528dd49d187668b5acfd669
