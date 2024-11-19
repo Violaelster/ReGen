@@ -9,7 +9,6 @@ body {
   background-image: url("/images/hero.png");
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
   overflow: auto;
 }
 
@@ -59,7 +58,10 @@ span {
 .hero {
   display: flex;
   justify-content: flex-start;
-  margin: 483px auto 68px 58px;
+  position: relative;
+  margin: 0;
+  top: 483px;
+  left: 58px;
 }
 
 nav.scrolled {
@@ -152,89 +154,34 @@ p {
   right: 0;
 }
 
-/* Tablet */
-
-@media (max-width: 1200px) {
-  /* Landing page */
-
-  body {
-    background-size: cover;
-    background-position: center;
-  }
-
-  nav {
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .product-care,
-  .favourite {
-    display: none;
-  }
-
-  span {
-    font-size: 20px;
-  }
+.main-bottom {
+  background-color: #FFFFFF;
+  height: 48px;
+  width: 100%;
+  bottom: 0;
+  top: 600px;
 }
 
-/* Mobile */
+/* COUNTDOWN */
 
-@media (max-width: 600px) {
-  /* Landing page */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+ 
+  overflow: hidden;
+  
 
-  body {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  nav {
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-    justify-content: flex-end;
-    align-items: center;
-    color: #023439;
-    height: 127px;
-  }
-
-  span {
-    font-size: 16px;
-  }
-
-  label {
-    display: flex;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin: 81px 1% 9px 1%;
-  }
-
-  .menu svg,
-  .cart svg,
-  .search svg {
-    width: 24px;
-    height: 24px;
-  }
-
-  .product-care,
-  .favourite {
-    display: none;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    margin: 58px auto 9px 11px;
-  }
-
-  .hero {
-    margin: 539px 225px 72px 24px;
-    flex-shrink: 0;
-  }
 }
 
+.countdown {
+  background-color: #023439;
+  height: 410px;
+  width: 100%;
+}
+
+
+/* FOOTER */
 
 footer {
 background-color: #023439;
@@ -338,4 +285,90 @@ background-color:#023439;
   bottom: 45px; /* Håll den längst ner i footern */
   right: -78px; /* Flytta yetin delvis utanför skärmen */
   z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
+}
+
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+  /* Landing page */
+
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  nav {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .product-care,
+  .favourite {
+    display: none;
+  }
+
+  span {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  /* Landing page */
+
+  body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  nav {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    justify-content: flex-end;
+    align-items: center;
+    color: #023439;
+    height: 127px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  label {
+    display: flex;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 81px 1% 9px 1%;
+  }
+
+  .menu svg,
+  .cart svg,
+  .search svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .product-care,
+  .favourite {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 58px auto 9px 11px;
+  }
+
+  .hero {
+    margin: 539px 225px 72px 24px;
+    flex-shrink: 0;
+  }
 }
