@@ -139,85 +139,133 @@ nav.scrolled {
   }
 }
 
-/* Reset */
+.icon-container svg {
+  background-color: black; /* Bara för att testa synligheten */
+}
 
   
-  footer {
-    background-color: #e0e0e0; /* Grå bakgrund */
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
+footer { 
+  background-color: pink;
+
+
+}
+
+.footer-content {
+  display:flex;
+  flex-direction: row;
+}
+
+.footer-section {
+
+}
+
+.footer-section h3 {
+
+}
+
+.footer-section ul {
+
+}
+
+.footer-section ul li {
+
+}
+
+.footer-section ul li a {
+
+}
+
+.footer-bottom {
+
+}
+
+.footer-bottom p {
+
+}
+
+.settings button {
+
+}
+
+.icon-chatt {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid #FFF;
+}
+
+.icon-mail {
+display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid #FFF;
+}
+
+.icon-phone {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid #FFF;
+}
+
+.icon-facebook {
+  display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid #FFF;
+}
+
+.footer-bottom {
+  background: #A9A2A2;
+}
+
+.footer-settings button {
+  display: flex;
+width: 65px;
+height: 30px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid #FFF;
+}
+
+.footer-settings button {
+  color: #FFF;
+  background: #A9A2A2;
+
+font-family: "IBM Plex Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+
+.language {
   
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Två kolumner */
-    gap: 20px;
-  }
-  
-  .footer-section {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-  }
-  
-  .footer-section ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-  }
-  
-  .footer-section ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .contact-icons a,
-  .social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .contact-icons img,
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-  }
-  
-  .footer-bottom p {
-    font-size: 14px;
-  }
-  
-  .footer-options button {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .footer-options button:hover {
-    background-color: #ddd;
-  }
-  
-  .footer-yeti img {
-    width: 50px;
-    height: auto;
-  }
-  
+}
