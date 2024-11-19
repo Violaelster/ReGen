@@ -234,8 +234,9 @@ p {
 
 footer {
 background-color: #023439;
-position: absolute;
 width:100%;
+position: relative;
+overflow: hidden;
 }
 
 
@@ -318,4 +319,11 @@ flex-shrink: 0;
 border-radius: 1px;
 border: 1px solid var(--text-main, #FFF);
 background-color:#023439;
+}
+
+.footer-yeti {
+  position: absolute; /* Placera yetin relativt till footern */
+  bottom: 45px; /* Håll den längst ner i footern */
+  right: -78px; /* Flytta yetin delvis utanför skärmen */
+  z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
 }
