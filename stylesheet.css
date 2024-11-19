@@ -13,6 +13,10 @@ body {
   overflow: auto;
 }
 
+main {
+  height: 100vh;
+}
+
 /* Landing Page */
 
 nav {
@@ -235,8 +239,15 @@ p {
 footer {
 background-color: #023439;
 width:100%;
+left: 0;
+bottom: 0;
 position: relative;
 overflow: hidden;
+}
+
+.footer-top {
+  background-color: #FFFFFF;
+  height: 48px;
 }
 
 
@@ -248,6 +259,7 @@ overflow: hidden;
   max-width: 1200px; /* Begränsar bredden på innehållet */
   margin: 0 auto; /* Centrerar innehållet i footern */
   padding: 20px;
+  height: 791px;
 
 
 }
@@ -285,7 +297,7 @@ overflow: hidden;
 
 .icon {
   border-radius: 2px;
-border: 1px solid var(--text-main, #FFF);
+border: 1px solid  #FFF;
 display: flex;
 width: 40px;
 height: 40px;
@@ -317,7 +329,7 @@ align-items: center;
 gap: 10px;
 flex-shrink: 0;
 border-radius: 1px;
-border: 1px solid var(--text-main, #FFF);
+border: 1px solid #FFF;
 background-color:#023439;
 }
 
