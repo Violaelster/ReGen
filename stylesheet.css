@@ -258,7 +258,28 @@ width:100%;
 .footer-bottom {
   background-color: #ED4E0A;
   max-height: 50px;
+  display: flex; /* Flexbox för att strukturera bottensektionen */
+  flex-direction: row;
+  justify-content: space-between; /* Sprid innehållet mellan ändarna */
+  align-items: center; /* Centrera vertikalt */
+  padding: 10px 20px;
+}
 
+.footer-settings {
+  display: flex; /* Flexbox för att hålla knapparna på en rad */
+  flex-direction: row; /* Knapparna i en horisontell rad */
+  gap: 10px; /* Mellanrum mellan knapparna */
+}
+
+.footer-section ul {
+  list-style: none; /* Tar bort punkterna */
+  padding: 0; /* Tar bort eventuell inre marginal */
+  margin: 0; /* Tar bort eventuell yttre marginal */
+}
+
+.footer-section ul li a {
+  color: #ffffff; /* Ändra färg på texten (anpassa hex-koden till önskad färg) */
+  text-decoration: none; /* Tar bort understrykningen */
 }
 
 .icon {
