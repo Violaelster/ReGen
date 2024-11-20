@@ -337,6 +337,77 @@ margin: 48px 152px 48px 121px;
   }
 }
 
+/* Teknologi möter natur */
+
+.teknik {
+  background-color: #023439;
+  height:537px;
+  display:flex;
+  flex-direction: row;
+}
+
+.teknik-yeti {
+width: 275px;
+height: 317px;
+}
+
+.teknik-container {
+  display:flex;
+  flex-direction:column;
+}
+
+.teknik-buttons {
+  display: inline-flex;
+height: 35px;
+width:136px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 1px;
+border: 2px solid var(--text-main, #FFF);
+background: var(--main-brand-green, #023439);
+}
+
+.teknik h4 {
+  color: var(--text-main, #FFF);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.teknik p {
+  font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+color: var(--text-main, #FFF);
+}
+
+.teknik h1 {
+  color: var(--main-brand-orange, #ED4E0A);
+font-family: "IBM Plex Sans";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.teknik-top {
+  background-color: #ffffff;
+  height: 48px;
+}
+
+.teknik-bottom {
+  background-color: #ffffff;
+  height: 48px;
+}
+
+/* Footer */
+
 footer {
   background-color: #023439;
   width: 100%;
@@ -352,6 +423,7 @@ footer {
   max-width: 1200px; /* Begränsar bredden på innehållet */
   margin: 0 auto; /* Centrerar innehållet i footern */
   padding: 20px;
+  margin-top:109px;
 }
 
 .footer-content h3 {
@@ -428,6 +500,7 @@ footer {
 .icon-links {
   display: flex; /* Flexbox för att rada upp ikonerna horisontellt */
   gap: 10px; /* Mellanrum mellan ikonerna */
+  
 }
 
 button {
@@ -489,7 +562,7 @@ button {
   }
   .footer-yeti {
     position: absolute; /* Placera yetin relativt till footern */
-    bottom: 32%; /* Håll den längst ner i footern */
+    bottom: 18%; /* Håll den längst ner i footern */
     right: -4%; /* Flytta yetin delvis utanför skärmen */
     z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
     width: 275px;
