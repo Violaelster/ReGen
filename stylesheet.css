@@ -423,7 +423,7 @@ footer {
   max-width: 1200px; /* Begränsar bredden på innehållet */
   margin: 0 auto; /* Centrerar innehållet i footern */
   padding: 20px;
-  margin-top:109px;
+  margin-top:19px;
 }
 
 .footer-content h3 {
@@ -519,6 +519,7 @@ button {
   border-radius: 1px;
   border: 1px solid var(--text-main, #fff);
   background-color: #023439;
+  margin-bottom:12px;
 }
 
 .footer-yeti {
@@ -562,7 +563,7 @@ button {
   }
   .footer-yeti {
     position: absolute; /* Placera yetin relativt till footern */
-    bottom: 18%; /* Håll den längst ner i footern */
+    bottom: 17.5%; /* Håll den längst ner i footern */
     right: -4%; /* Flytta yetin delvis utanför skärmen */
     z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
     width: 275px;
