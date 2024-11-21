@@ -70,6 +70,10 @@ nav.scrolled {
   background-color: #d9e2e7;
 }
 
+nav label:hover {
+  color: #ED4E0A;
+}
+
 /* Menu */
 
 .links-container {
