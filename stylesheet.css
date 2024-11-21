@@ -2,8 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   font-family: "IBM Plex Sans";
   margin: 0;
@@ -18,17 +16,16 @@ main {
   min-height: 100vh;
 }
 .background-container {
-  margin-top:-305px;
+  margin-top: -305px;
   padding: 0;
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   z-index: 1;
-  background: url('/images/hero.png') no-repeat center center;
+  background: url("/images/hero.png") no-repeat center center;
   background-size: cover; /* Ensures the image covers the container */
 }
-
 
 /* Landing Page */
 
@@ -84,7 +81,7 @@ nav.scrolled {
 }
 
 nav label:hover {
-  color: #ED4E0A;
+  color: #ed4e0a;
 }
 
 /* Menu */
@@ -104,7 +101,7 @@ nav label:hover {
   background: #d9e2e7;
   margin: 1px;
   transition: 0.6s ease-out;
-  padding: 10px;
+  
 }
 
 .links-container a,
@@ -181,6 +178,71 @@ p {
   top: 600px;
 }
 
+@media (max-width: 600px) {
+  .links-container {
+    top: 120px;
+    right: -101%;
+    width: 100vw;
+    height: 389px;
+    padding: 0;
+  }
+
+  .links-container a,
+  p {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .links-container svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .line {
+    width: 280px;
+    height: 1px;
+    background: #767676;
+    margin: 0 auto 0 34px;
+  }
+
+  .links-container a {
+    margin: 8px auto 5px 34px;
+    color: #023439;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 10px;
+  }
+
+  .language {
+    margin: auto auto 10px 34px;
+    color: #023439;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 10px;
+  }
+
+  .link-menu {
+    margin: 36px auto 28px 34px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
 /* COUNTDOWN */
 
 .countdown-container {
@@ -192,22 +254,20 @@ p {
 
 .countdown {
   background-color: #023439;
-  display: flex; 
-  justify-content: flex-start; 
-  align-items: center; 
-  flex-direction: row; 
-  margin: 0 auto;  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
   max-width: 100%;
   max-height: 410px;
 }
 
 .countdown-text-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
 }
-
-
 
 .countdown-titletext {
   color: #fff;
@@ -217,7 +277,6 @@ p {
   font-weight: 700;
   line-height: normal;
   margin: 49px 121px 0px 94px;
-  
 }
 
 .countdown-text {
@@ -241,23 +300,23 @@ p {
 }
 
 .vertical-line {
-width: 2px;
-height: 314px;
-padding-right: 2px;
-background-color: #ffffff;
-margin: 48px 152px 48px 121px;
+  width: 2px;
+  height: 314px;
+  padding-right: 2px;
+  background-color: #ffffff;
+  margin: 48px 152px 48px 121px;
 }
 
 .countdown-container2 {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 1px;
 }
 
 #countdown-timer {
   font-size: 200px;
   font-weight: 700;
-  color: #ED4E0A;
+  color: #ed4e0a;
   margin: 73px 162px 0px 100px;
 }
 
@@ -266,7 +325,6 @@ margin: 48px 152px 48px 121px;
   font-size: 50px;
   font-weight: 500;
   margin: 0px 237px 83px 100px;
-  
 }
 
 /* MEDIA QUERIES */
@@ -279,11 +337,10 @@ margin: 48px 152px 48px 121px;
   .links-container a:hover {
     color: #ed4e0a;
   }
-  
+
   .language:hover {
     color: #ed4e0a;
   }
-
 
   nav {
     background-color: transparent;
@@ -301,7 +358,7 @@ margin: 48px 152px 48px 121px;
 }
 
 nav label:hover {
-  color: #ED4E0A;
+  color: #ed4e0a;
 }
 
 /* Mobile */
@@ -309,14 +366,14 @@ nav label:hover {
 @media (max-width: 600px) {
   /* Landing page */
   .background-container {
-    margin-top:-135px;
+    margin-top: -135px;
     padding: 0;
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     z-index: 1;
-    background: url('/images/hero.png') no-repeat center center;
+    background: url("/images/hero.png") no-repeat center center;
     background-size: cover; /* Ensures the image covers the container */
   }
 
@@ -343,7 +400,7 @@ nav label:hover {
   }
 
   nav label:hover {
-    color: #ED4E0A;
+    color: #ed4e0a;
   }
 
   .menu svg,
@@ -372,19 +429,18 @@ nav label:hover {
   .links-container a:hover {
     color: #ed4e0a;
   }
-  
+
   .language:hover {
     color: #ed4e0a;
   }
-  
 }
 
 /* Teknologi möter natur */
 
 .teknik {
   background-color: #023439;
-  height:537px;
-  display:flex;
+  height: 537px;
+  display: flex;
   flex-direction: row;
 }
 
@@ -398,42 +454,42 @@ nav label:hover {
 }
 
 .teknik-container {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   margin-top: 35px;
 }
 
 .teknik-button {
-display: inline-flex;
-height: 35px;
-width:136px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 1px;
-border: 2px solid var(--text-main, #FFF);
-background: var(--main-brand-green, #023439);
-margin-bottom: 12px;
-padding: 0px;
+  display: inline-flex;
+  height: 35px;
+  width: 136px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  border: 2px solid var(--text-main, #fff);
+  background: var(--main-brand-green, #023439);
+  margin-bottom: 12px;
+  padding: 0px;
 }
 
 .teknik h4 {
-  color: var(--text-main, #FFF);
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: var(--text-main, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .teknik p {
   font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-color: var(--text-main, #FFF);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-main, #fff);
 }
 
 .teknik-description {
@@ -441,12 +497,12 @@ color: var(--text-main, #FFF);
 }
 
 .teknik h1 {
-color: var(--main-brand-orange, #ED4E0A);
-font-family: "IBM Plex Sans";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: var(--main-brand-orange, #ed4e0a);
+  font-family: "IBM Plex Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .teknik-top {
@@ -476,7 +532,7 @@ footer {
   max-width: 1200px; /* Begränsar bredden på innehållet */
   margin: 0 auto; /* Centrerar innehållet i footern */
   padding: 20px;
-  margin-top:19px;
+  margin-top: 19px;
 }
 
 .footer-content h3 {
@@ -553,7 +609,6 @@ footer {
 .icon-links {
   display: flex; /* Flexbox för att rada upp ikonerna horisontellt */
   gap: 10px; /* Mellanrum mellan ikonerna */
-  
 }
 
 button {
@@ -572,7 +627,7 @@ button {
   border-radius: 1px;
   border: 1px solid var(--text-main, #fff);
   background-color: #023439;
-  margin-bottom:12px;
+  margin-bottom: 12px;
 }
 
 .footer-yeti {
