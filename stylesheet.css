@@ -347,17 +347,22 @@ margin: 48px 152px 48px 121px;
 }
 
 .teknik-yeti {
-width: 275px;
-height: 317px;
+  width: 74px;
+  height: 103px;
+  position: absolute; /* Placera yetin relativt till footern */
+  bottom: -180%; /* Håll den längst ner i footern */
+  right: 6%; /* Flytta yetin delvis utanför skärmen */
+  z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
 }
 
 .teknik-container {
   display:flex;
   flex-direction:column;
+  margin-top: 35px;
 }
 
-.teknik-buttons {
-  display: inline-flex;
+.teknik-button {
+display: inline-flex;
 height: 35px;
 width:136px;
 padding: 10px;
@@ -368,6 +373,8 @@ flex-shrink: 0;
 border-radius: 1px;
 border: 2px solid var(--text-main, #FFF);
 background: var(--main-brand-green, #023439);
+margin-bottom: 12px;
+padding: 0px;
 }
 
 .teknik h4 {
@@ -387,8 +394,12 @@ line-height: normal;
 color: var(--text-main, #FFF);
 }
 
+.teknik-description {
+  width: 191px;
+}
+
 .teknik h1 {
-  color: var(--main-brand-orange, #ED4E0A);
+color: var(--main-brand-orange, #ED4E0A);
 font-family: "IBM Plex Sans";
 font-size: 32px;
 font-style: normal;
