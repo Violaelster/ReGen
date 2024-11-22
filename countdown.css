@@ -1,0 +1,177 @@
+/* COUNTDOWN */
+
+.countdown-container {
+    background-color: #e7ebee;
+    padding: 0px 24px 0px 24px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .countdown {
+    background-color: #023439;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 410px;
+    min-height: 410px;
+  }
+  
+  .countdown-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    max-height: 410px;
+    min-height: 410px;
+  }
+  
+  .countdown-titletext {
+    margin: 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 82px;
+    top: 30px;
+  }
+  
+  .countdown-text {
+    position: relative;
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    left: 84px;
+    top: 15px;
+  }
+  
+  .countdown-date {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 90px;
+    left: 82px;
+  }
+  
+  .vertical-line {
+    position: relative;
+    width: 2px;
+    height: 314px;
+    padding-right: 2px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 20%;
+  }
+  
+  #countdown-timer {
+    margin: 0;
+    position: relative;
+    font-size: 200px;
+    font-weight: 700;
+    color: #ed4e0a;
+    top: -40px;
+    left: 38%;
+  }
+  
+  .countdown-days {
+    position: relative;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    left: 23%;
+    top: 90px;
+    margin: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .countdown {
+      width: 100%;
+      max-height: 153px;
+      min-height: 153px;
+    }
+  
+    .countdown-text-container {
+      max-height: 153px;
+      min-height: 153px;
+    }
+  
+    .countdown-titletext {
+      margin: 0;
+      position: relative;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      left: 17px;
+      top: 20px;
+    }
+  
+    .countdown-text {
+      position: relative;
+      color: #fff;
+      text-align: left;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      left: 17px;
+      top: 20px;
+    }
+  
+    .countdown-date {
+      position: relative;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      top: 55px;
+      left: 17px;
+    }
+  
+    .vertical-line {
+      position: relative;
+      width: 1px;
+      height: 102px;
+      background-color: #ffffff;
+      top: 5px;
+      left: 20%;
+    }
+  
+    #countdown-timer {
+      margin: 0;
+      position: relative;
+      font-size: 48px;
+      font-weight: 700;
+      color: #ed4e0a;
+      top: -5px;
+      left: 120px;
+    }
+  
+    .countdown-days {
+      position: relative;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      left: 50px;
+      top: 25px;
+      margin: 0;
+    }
+  }
+  

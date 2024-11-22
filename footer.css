@@ -1,0 +1,181 @@
+/* Footer */
+
+footer {
+    background-color: #023439;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    background-color: #023439;
+    display: grid; /* Aktiverar grid-layout */
+    grid-template-columns: repeat(2, 1fr); /* Två kolumner med lika stor bredd */
+    grid-gap: 20px; /* Mellanrum mellan sektionerna */
+    max-width: 1200px; /* Begränsar bredden på innehållet */
+    margin: 0 auto; /* Centrerar innehållet i footern */
+    padding: 20px;
+    margin-top: 19px;
+  }
+  
+  .footer-content h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 2px 0px;
+  }
+  
+  .footer-top {
+    background-color: #ffffff;
+    height: 48px;
+  }
+  
+  .footer-section {
+    text-align: left; /* Justerar texten till vänster */
+  }
+  
+  .footer-bottom {
+    background-color: #ed4e0a;
+    height: 50px;
+    display: flex; /* Flexbox för att strukturera bottensektionen */
+    flex-direction: row;
+    justify-content: space-between; /* Sprid innehållet mellan ändarna */
+    align-items: center; /* Centrera vertikalt */
+    padding: 10px 20px;
+  }
+  
+  .footer-settings {
+    display: flex; /* Flexbox för att hålla knapparna på en rad */
+    flex-direction: row; /* Knapparna i en horisontell rad */
+    gap: 10px; /* Mellanrum mellan knapparna */
+  }
+  
+  .footer-section ul {
+    list-style: none; /* Tar bort punkterna */
+    padding: 0; /* Tar bort eventuell inre marginal */
+    margin: 0; /* Tar bort eventuell yttre marginal */
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff; /* Ändra färg på texten (anpassa hex-koden till önskad färg) */
+    text-decoration: none; /* Tar bort understrykningen */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  .footer p {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  .icon {
+    border-radius: 2px;
+    border: 1px solid var(--text-main, #fff);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  
+  .icon-links {
+    display: flex; /* Flexbox för att rada upp ikonerna horisontellt */
+    gap: 10px; /* Mellanrum mellan ikonerna */
+  }
+  
+  button {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: inline-flex;
+    height: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    border: 1px solid var(--text-main, #fff);
+    background-color: #023439;
+    margin-bottom: 12px;
+  }
+  
+  .footer-yeti {
+    position: absolute; /* Placera yetin relativt till footern */
+    bottom: 15%; /* Håll den längst ner i footern */
+    right: -4%; /* Flytta yetin delvis utanför skärmen */
+    z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
+    width: 74px;
+    height: 103px;
+  }
+  
+  @media (min-width: 1200px) {
+    .footer-section ul li a {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  
+    .footer-content {
+      width: 1568.142px;
+      height: 791.483px;
+    }
+  
+    .footer-bottom {
+      height: 104px;
+    }
+  
+    .footer h3 {
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  
+    .footer p {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    .footer-yeti {
+      position: absolute; /* Placera yetin relativt till footern */
+      bottom: 17.5%; /* Håll den längst ner i footern */
+      right: -4%; /* Flytta yetin delvis utanför skärmen */
+      z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
+      width: 275px;
+      height: 317px;
+    }
+  
+    button {
+      height: 75px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+  
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+    .icon-links {
+      gap: 28px;
+    }
+  }
+  
