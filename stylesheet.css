@@ -280,19 +280,19 @@ p {
   font-weight: 700;
   line-height: normal;
   left: 82px;
-  top: 49px;
+  top: 30px;
 }
 
 .countdown-text {
   position: relative;
   color: #fff;
-  text-align: center;
-  font-size: 40px;
+  text-align: left;
+  font-size: 28px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   line-height: normal;
   left: 84px;
-  top: 20px;
+  top: 15px;
 }
 
 .countdown-date {
@@ -303,7 +303,7 @@ p {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  top: 114px;
+  top: 90px;
   left: 82px;
 }
 
@@ -368,13 +368,13 @@ p {
   .countdown-text {
     position: relative;
     color: #fff;
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 10px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     left: 17px;
-    top: 15px;
+    top: 20px;
   }
   
   .countdown-date {
@@ -385,7 +385,7 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    top: 80px;
+    top: 55px;
     left: 17px;
   }
   
