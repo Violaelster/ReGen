@@ -1,76 +1,86 @@
 /* Teknologi möter natur */
-
 .teknik {
-    background-color: #023439;
-    height: 537px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .teknik-yeti {
-    width: 74px;
-    height: 103px;
-    position: absolute; /* Placera yetin relativt till footern */
-    bottom: -180%; /* Håll den längst ner i footern */
-    right: 6%; /* Flytta yetin delvis utanför skärmen */
-    z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
-  }
-  
-  .teknik-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 35px;
-  }
-  
-  .teknik-button {
-    display: inline-flex;
-    height: 35px;
-    width: 136px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    border-radius: 1px;
-    border: 2px solid var(--text-main, #fff);
-    background: var(--main-brand-green, #023439);
-    margin-bottom: 12px;
-    padding: 0px;
-  }
-  
-  .teknik h4 {
-    color: var(--text-main, #fff);
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  
-  .teknik p {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: var(--text-main, #fff);
-  }
-  
-  .teknik-description {
-    width: 191px;
-  }
-  
-  .teknik h1 {
-    color: var(--main-brand-orange, #ed4e0a);
-    font-family: "IBM Plex Sans";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  
-  .teknik-top {
-    background-color: #ffffff;
-    height: 48px;
-  }
+  background-color: #023439;
+  height: 258px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.88rem; /* Mellanrum mellan feature-items */
+  margin: 35px 4px 0px 24px;
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 34px 39px 0px 4px;
+}
+
+.teknik-button {
+  display: flex;
+  height: 2.1875rem;
+  padding: 0.625rem;
+  max-width: max-content;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 1px;
+  border: 2px solid var(--text-main, #fff);
+  background: var(--main-brand-green, #023439);
+}
+
+.teknik h4 {
+  color: var(--text-main, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.teknik p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-main, #fff);
+}
+
+.teknik-description {
+  width: 191px;
+  text-align: left;
+}
+
+.main-text {
+  color: white;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.highlight-text {
+  color: var(--main-brand-orange, #ed4e0a);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.teknik-yeti {
+  width: 43px;
+  height: 103px;
+  position: absolute; /* Placera yetin relativt till footern */
+  bottom: -473px; /* Håll den längst ner i footern, använd ej procent */
+  right: 1%; /* Flytta yetin delvis utanför skärmen */
+  z-index: 1; /* Säkerställ att den syns ovanpå bakgrunden */
+}
+
+
+
+
   
   
