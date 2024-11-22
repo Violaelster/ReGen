@@ -101,7 +101,6 @@ nav label:hover {
   background: #d9e2e7;
   margin: 1px;
   transition: 0.6s ease-out;
-  
 }
 
 .links-container a,
@@ -169,11 +168,41 @@ p {
 }
 
 .main-bottom {
-  background-color: #ffffff;
-  height: 48px;
-  width: 100%;
-  bottom: 0;
-  top: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 180px;
+  height: 95px;
+  padding-left: 24px;
+  background-color: #e7ebee;
+}
+
+.main-bottom a {
+  position: relative;
+  left: 85px;
+  top: 20px;
+  color: var(--main-brand-green, #023439);
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.main-bottom a::after {
+  content: ""; /* Adds an empty element for the line */
+  position: absolute;
+  bottom: -15px; /* Adjusts line placement below the text */
+  left: -80px;
+  width: 995px; /* Matches the width of the text */
+  height: 2px;
+  background-color: #767676; /* Line color */
+}
+
+.main-bottom a:hover {
+  color: #ed4e0a;
 }
 
 @media (max-width: 600px) {
@@ -242,7 +271,7 @@ p {
 /* COUNTDOWN */
 
 .countdown-container {
-  background-color: #ffffff;
+  background-color: #e7ebee;
   padding: 0px 24px 0px 24px;
   overflow: hidden;
   max-width: 100%;
@@ -317,8 +346,6 @@ p {
   left: 20%;
 }
 
-
-
 #countdown-timer {
   margin: 0;
   position: relative;
@@ -337,7 +364,6 @@ p {
   left: 23%;
   top: 90px;
   margin: 0;
-
 }
 
 @media (max-width: 600px) {
@@ -351,7 +377,7 @@ p {
     max-height: 153px;
     min-height: 153px;
   }
-  
+
   .countdown-titletext {
     margin: 0;
     position: relative;
@@ -364,7 +390,7 @@ p {
     left: 17px;
     top: 20px;
   }
-  
+
   .countdown-text {
     position: relative;
     color: #fff;
@@ -376,7 +402,7 @@ p {
     left: 17px;
     top: 20px;
   }
-  
+
   .countdown-date {
     position: relative;
     color: #fff;
@@ -388,7 +414,7 @@ p {
     top: 55px;
     left: 17px;
   }
-  
+
   .vertical-line {
     position: relative;
     width: 1px;
@@ -397,9 +423,7 @@ p {
     top: 5px;
     left: 20%;
   }
-  
-  
-  
+
   #countdown-timer {
     margin: 0;
     position: relative;
@@ -409,7 +433,7 @@ p {
     top: -5px;
     left: 120px;
   }
-  
+
   .countdown-days {
     position: relative;
     color: #fff;
@@ -418,10 +442,7 @@ p {
     left: 50px;
     top: 25px;
     margin: 0;
-  
   }
-  
-  
 }
 
 /* MEDIA QUERIES */
