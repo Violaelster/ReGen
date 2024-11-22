@@ -136,7 +136,7 @@ p {
 }
 
 .language {
-  margin: auto auto 10px 34px;
+  margin: auto auto 25px 34px;
   color: #023439;
   font-family: "IBM Plex Sans";
   font-size: 28px;
@@ -207,6 +207,43 @@ p {
 
 .main-bottom a:hover {
   color: #ed4e0a;
+}
+
+@media (max-width: 600px){
+  .main-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 36px;
+    height: 60px;
+    padding-left: 24px;
+    background-color: #e7ebee;
+  }
+
+  .main-bottom a {
+    position: relative;
+    left: 30px;
+    top: 15px;
+    color: var(--main-brand-green, #023439);
+    text-align: center;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+  }
+
+  .main-bottom a::after {
+    content: ""; /* Adds an empty element for the line */
+    position: absolute;
+    bottom: -15px; /* Adjusts line placement below the text */
+    left: -28px;
+    width: 190%; /* Matches the width of the text */
+    height: 2px;
+    background-color: #767676; /* Line color */
+  }
 }
 
 @media (max-width: 600px) {
