@@ -222,7 +222,7 @@ p {
 
   .main-bottom a {
     position: relative;
-    left: 30px;
+    left: 25px;
     top: 15px;
     color: var(--main-brand-green, #023439);
     text-align: center;
@@ -238,10 +238,10 @@ p {
   .main-bottom a::after {
     content: ""; /* Adds an empty element for the line */
     position: absolute;
-    bottom: -15px; /* Adjusts line placement below the text */
-    left: -28px;
+    bottom: -10px; /* Adjusts line placement below the text */
+    left: -22px;
     width: 190%; /* Matches the width of the text */
-    height: 2px;
+    height: 1px;
     background-color: #767676; /* Line color */
   }
 }
