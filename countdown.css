@@ -2,7 +2,7 @@
 
 .countdown-container {
     background-color: #e7ebee;
-    padding: 0px 24px 0px 24px;
+    padding: 0px 24px 48px 24px;
     overflow: hidden;
     max-width: 100%;
     margin: 0 auto;
@@ -97,6 +97,10 @@
   }
   
   @media (max-width: 600px) {
+    .countdown-container {
+      padding: 0px 24px 24px 24px;
+    }
+
     .countdown {
       width: 100%;
       max-height: 153px;
@@ -106,6 +110,7 @@
     .countdown-text-container {
       max-height: 153px;
       min-height: 153px;
+      
     }
   
     .countdown-titletext {
