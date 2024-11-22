@@ -1,0 +1,166 @@
+.main-product {
+  width: 404px;
+  height: 274px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #023439;
+}
+
+.jacket-container {
+  position: relative;
+  width: 173px;
+  height: 274px;
+}
+
+.jacket-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#orange:checked ~ .jacket-container .orange_jacket,
+#green:checked ~ .jacket-container .green_jacket,
+#beige:checked ~ .jacket-container .beige_jacket {
+  display: block;
+}
+
+
+
+.preorder {
+  position: relative;
+  top: -55px;
+  left: 35px;
+  color: var(--main-text, #fff);
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: auto;
+  height: 35px;
+  margin: 0;
+  padding: 10px;
+  gap: 10px;
+  border: 2px solid var(--text-main, #fff);
+}
+
+.preorder:hover {
+  border-radius: 1px;
+  border: 2px solid  #023439;
+  background: var(--main-text, #fff);
+  color: black;
+}
+
+.preorder:active {
+  border-radius: 1px;
+  border: 2px solid var(--main-text, #fff);
+  background: var(--main-brand-orange, #ed4e0a);
+  color: #FFF;
+}
+
+.product-choice {
+  display: flex;
+  width: 231px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+  margin: 0;
+  height: 274px;
+}
+
+.product-choice h1 {
+  position: relative;
+  color: var(--main-text, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  top: 10px;
+  left: 21px;
+  margin: 0;
+}
+
+.product-choice h4 {
+  position: relative;
+  color: var(--main-text, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  left: 21px;
+  top: -23px;
+  margin: 0;
+}
+
+.product-choice label {
+  position: relative;
+  margin: 0;
+  left: -1px;
+  top: -1px;
+}
+
+.product-line {
+  position: relative;
+  left: 21px;
+  top: -45px;
+  width: 135px;
+  height: 1px;
+  border: 1px solid var(--main-text, #fff);
+}
+
+.product-choice img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.color-btn:hover {
+  border-radius: 1px;
+  border: 1px solid var(--main-brand-green, #023439);
+  background: var(--main-text, #FFF);
+  color: black;
+}
+
+.product-choice button:active {
+  border-radius: 1px;
+  border: 2px solid var(--main-text, #fff);
+  background: var(--main-brand-orange, #ed4e0a);
+  color: #FFF;
+}
+
+.green {
+  position: relative;
+  left: 21px;
+  top: -40px;
+}
+
+.orange {
+  position: relative;
+  left: 83px;
+  top: -216px;
+}
+
+.beige {
+  position: relative;
+  left: 145px;
+  top: -392px;
+}
+
+.color-btn {
+  margin: 0;
+  width: 62px;
+  height: 28px;
+}
+
+input[type="radio"] {
+  display: none;
+}
