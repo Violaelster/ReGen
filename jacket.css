@@ -63,8 +63,7 @@
 
 .product-choice {
   display: flex;
-  max-width: 600px;
-  width: 100%;
+  width: 100vw;
   flex-direction: column;
   align-items: flex-start;
   gap: 26px;
@@ -201,8 +200,7 @@ input[type="radio"] {
   }
 
   .product-choice {
-    max-width: 1500px;
-    width: 100%;
+    width: 100vw;
     gap: 26px;
     margin: 0;
     height: 856px;
