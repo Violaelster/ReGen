@@ -1,16 +1,17 @@
 .main-product {
-  width: 404px;
+  width: 100%;
   height: 274px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #023439;
+  background-color: #e7ebee;
 }
 
 .jacket-container {
   position: relative;
-  width: 173px;
+  max-width: 173px;
   height: 274px;
+  width: 100%;
 }
 
 .jacket-container img {
@@ -25,8 +26,6 @@
 #beige:checked ~ .jacket-container .beige_jacket {
   display: block;
 }
-
-
 
 .preorder {
   position: relative;
@@ -49,26 +48,29 @@
 
 .preorder:hover {
   border-radius: 1px;
-  border: 2px solid  #023439;
+  border: 2px solid #023439;
   background: var(--main-text, #fff);
   color: black;
+  cursor: pointer;
 }
 
 .preorder:active {
   border-radius: 1px;
   border: 2px solid var(--main-text, #fff);
   background: var(--main-brand-orange, #ed4e0a);
-  color: #FFF;
+  color: #fff;
 }
 
 .product-choice {
   display: flex;
-  width: 231px;
+  max-width: 600px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 26px;
   margin: 0;
   height: 274px;
+  background-color: #023439;
 }
 
 .product-choice h1 {
@@ -96,7 +98,6 @@
   top: -23px;
   margin: 0;
 }
-
 
 .product-line {
   position: relative;
@@ -127,7 +128,7 @@
   border: 1px solid #fff;
   background: #023439;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: "IBM Plex Sans";
   font-size: 14px;
   margin: 0;
 }
@@ -135,7 +136,7 @@
 .product-choice label:hover {
   border-radius: 1px;
   border: 1px solid var(--main-brand-green, #023439);
-  background: var(--main-text, #FFF);
+  background: var(--main-text, #fff);
   color: black;
 }
 
@@ -143,7 +144,7 @@
   border-radius: 1px;
   border: 2px solid var(--main-text, #fff);
   background: var(--main-brand-orange, #ed4e0a);
-  color: #FFF;
+  color: #fff;
 }
 
 .green {
@@ -164,12 +165,147 @@
   top: -388px;
 }
 
-.color-btn {
-  margin: 0;
-  width: 62px;
-  height: 28px;
-}
-
 input[type="radio"] {
   display: none;
+}
+
+.product-choice h2,
+.product-choice h3,
+.material,
+.material-description{
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .main-product {
+    height: 957px;
+    padding: 0px 0px 48px 24px;
+  }
+
+  .jacket-container {
+    max-width: 662px;
+    height: 856px;
+    width: 100%;
+  }
+
+  .preorder {
+    top: -125px;
+    left: 210px;
+    font-size: 40px;
+    height: 95px;
+    margin: 0;
+    padding: 10px 20px;
+    gap: 10px;
+    border: 2px solid var(--text-main, #fff);
+    background-color: #05535a;
+  }
+
+  .product-choice {
+    max-width: 1500px;
+    width: 100%;
+    gap: 26px;
+    margin: 0;
+    height: 856px;
+    background-color: #023439;
+  }
+
+  .product-choice h1 {
+    font-size: 96px;
+    top: 20px;
+    left: 71px;
+  }
+
+  .product-choice h4 {
+    font-size: 40px;
+    left: 71px;
+    top: -23px;
+  }
+
+  .product-line {
+    left: 71px;
+    top: -35px;
+    width: 361px;
+    height: 2px;
+  }
+
+  .product-choice h2 {
+    position: relative;
+    display: flex;
+    color: var(--main-text, #fff);
+    font-family: "IBM Plex Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    left: 71px;
+    top: -45px;
+  }
+
+  .product-choice h3 {
+    position: relative;
+    display: flex;
+    color: var(--main-text, #fff);
+    font-family: "IBM Plex Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    left: 71px;
+    top: -75px;
+  }
+
+  .material {
+    position: relative;
+    display: flex;
+    color: var(--main-text, #fff);
+    font-family: "IBM Plex Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    left: 71px;
+    top: -75px;
+  }
+  .material-description {
+    position: relative;
+    display: flex;
+    color: var(--main-text, #fff);
+    font-family: "IBM Plex Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    left: 71px;
+    top: -105px;
+  }
+
+  .product-choice img {
+    width: 240px;
+    height: 296px;
+  }
+  
+  .product-choice label {
+    width: 240px;
+    height: 56px;
+    font-size: 28px;
+  }
+
+  .green {
+    left: 71px;
+    top: -100px;
+  }
+  
+  .orange {
+    left: 311px;
+    top: -478px;
+  }
+  
+  .beige {
+    left: 551px;
+    top: -856px;
+  }
 }
