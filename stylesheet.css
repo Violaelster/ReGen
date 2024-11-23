@@ -193,16 +193,16 @@ p {
   line-height: normal;
   text-decoration: none;
   transition: 0.3s ease-out;
+  white-space: nowrap;
 }
 
-.main-bottom a::after {
-  content: ""; /* Adds an empty element for the line */
-  position: absolute;
-  bottom: -15px; /* Adjusts line placement below the text */
-  left: -80px;
-  width: 995px; /* Matches the width of the text */
+.bottom-menu-line {
   height: 2px;
-  background-color: #767676; /* Line color */
+  background-color: #767676;
+  width: 96.8vw;
+  margin-top: 70px;
+  margin-left: -945px;
+
 }
 
 .main-bottom a:hover {
@@ -235,15 +235,13 @@ p {
     transition: 0.3s ease-out;
   }
 
-  .main-bottom a::after {
-    content: ""; /* Adds an empty element for the line */
-    position: absolute;
-    bottom: -10px; /* Adjusts line placement below the text */
-    left: -22px;
-    width: 190%; /* Matches the width of the text */
-    height: 1px;
-    background-color: #767676; /* Line color */
-  }
+  .bottom-menu-line {
+    height: 2px;
+    background-color: #767676;
+    width: 96.8vw;
+    margin-top: 45px;
+    margin-left: -335px;  
+  
 }
 
 @media (max-width: 600px) {
