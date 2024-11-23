@@ -68,6 +68,10 @@ span {
   margin: 50px auto 17px 16px;
 }
 
+.search {
+  margin-right: 800px;
+}
+
 .hero {
   display: flex;
   justify-content: flex-start;
@@ -340,11 +344,14 @@ p {
   span {
     font-size: 20px;
   }
+  .search {
+    margin-right: auto;
+  }
+  nav label:hover {
+    color: #ed4e0a;
+  }
 }
 
-nav label:hover {
-  color: #ed4e0a;
-}
 
 /* Mobile */
 
@@ -398,6 +405,10 @@ nav label:hover {
   .product-care,
   .favourite {
     display: none;
+  }
+
+  .search {
+    margin-right: auto;
   }
 
   .logo {
