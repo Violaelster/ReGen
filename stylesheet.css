@@ -84,6 +84,7 @@ nav.scrolled {
 
 nav label:hover {
   color: #ed4e0a;
+  cursor: pointer;
 }
 
 /* Menu */
@@ -160,6 +161,7 @@ p {
 
 .language:hover {
   color: #ed4e0a;
+  cursor: pointer;
 }
 
 #check {
@@ -199,7 +201,7 @@ p {
 .bottom-menu-line {
   height: 2px;
   background-color: #767676;
-  width: 96.8vw;
+  width: 98.8%;
   margin-top: 70px;
   margin-left: -945px;
 
@@ -236,18 +238,19 @@ p {
   }
 
   .bottom-menu-line {
-    height: 2px;
+    height: 1px;
     background-color: #767676;
-    width: 96.8vw;
+    width: 96.5%;
     margin-top: 45px;
     margin-left: -335px;  
   
+}
 }
 
 @media (max-width: 600px) {
   .links-container {
     top: 120px;
-    right: -101%;
+    right: -105%;
     width: 100vw;
     height: 389px;
     padding: 0;
