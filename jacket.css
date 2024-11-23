@@ -197,6 +197,7 @@ input[type="radio"] {
     gap: 10px;
     border: 2px solid var(--text-main, #fff);
     background-color: #05535a;
+    transition: 0.3s ease-out;
   }
 
   .product-choice {
