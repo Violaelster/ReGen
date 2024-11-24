@@ -206,7 +206,7 @@
 .product-preorder:hover,
 .product-preorder2:hover,
 .product-preorder3:hover,
-.product-preorder4:hover{
+.product-preorder4:hover {
   border-radius: 1px;
   border: 1px solid var(--main-brand-green, #023439);
   background: var(--main-text, #fff);
@@ -528,26 +528,26 @@
 
   .discoverproduct {
     display: flex;
-width: 722px;
-height: 138px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 3px solid var(--main-text, #FFF);
-background: var(--main-brand-green, #023439);
-color: var(--main-text, #FFF);
-text-align: center;
-font-family: "IBM Plex Sans";
-font-size: 50px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin: 0 auto;
-left: 480px;
-top: 100px;
+    width: 722px;
+    height: 138px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 3px solid var(--main-text, #fff);
+    background: var(--main-brand-green, #023439);
+    color: var(--main-text, #fff);
+    text-align: center;
+    font-family: "IBM Plex Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 auto;
+    left: 480px;
+    top: 100px;
   }
 }
 
@@ -560,6 +560,7 @@ top: 100px;
   .products-container {
     position: relative;
     top: -650px;
+    
   }
 
   .products-container h1 {
@@ -853,25 +854,25 @@ top: 100px;
 
   .discoverproduct {
     display: flex;
-width: 722px;
-height: 138px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 3px solid var(--main-text, #FFF);
-background: var(--main-brand-green, #023439);
-color: var(--main-text, #FFF);
-text-align: center;
-font-family: "IBM Plex Sans";
-font-size: 50px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin: 0 auto;
-left: 375px;
-top: 100px;
+    width: 722px;
+    height: 138px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 3px solid var(--main-text, #fff);
+    background: var(--main-brand-green, #023439);
+    color: var(--main-text, #fff);
+    text-align: center;
+    font-family: "IBM Plex Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 auto;
+    left: 375px;
+    top: 100px;
   }
 }
