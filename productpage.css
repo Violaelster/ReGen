@@ -1,0 +1,221 @@
+.productpage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
+  padding: 26px 23px 12px 23px;
+  background-color: #e7ebee;
+}
+
+.products-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 358px;
+  height: 608px;
+}
+
+.products-container h1 {
+  position: relative;
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  left: 5px;
+}
+
+.products-container h4 {
+  position: relative;
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  top: 40px;
+  left: -169px;
+  white-space: nowrap;
+}
+
+.products {
+  position: relative;
+  width: 354px;
+  height: 220px;
+  flex-shrink: 0;
+  left: -340px;
+  top: 70px;
+}
+
+.products-container img {
+  width: 100%;
+  height: 168px;
+}
+
+.productdescription {
+  position: relative;
+  background-color: #023439;
+  width: 100%;
+  height: 58px;
+  margin: 0;
+  top: -5px;
+}
+
+.productdescription h3 {
+  position: relative;
+  left: 20px;
+  color: var(--main-text, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.productdescription p {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  color: var(--main-text, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product-preorder {
+  position: relative;
+  top: -37px;
+  right: -212px;
+  border-radius: 1px;
+border: 2px solid var(--main-text, #FFF);
+background: var(--main-brand-green, #023439);
+color: var(--main-text, #FFF);
+text-align: center;
+font-family: "IBM Plex Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+height: 35px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+transition: 0.3s ease-out;
+}
+
+.products2 {
+  position: relative;
+  width: 354px;
+  height: 220px;
+  flex-shrink: 0;
+  left: -694px;
+  top: 305px;
+}
+
+.productdescription2 {
+  position: relative;
+  background-color: #023439;
+  width: 100%;
+  height: 58px;
+  margin: 0;
+  top: -5px;
+}
+
+.productdescription2 h3 {
+  position: relative;
+  left: 20px;
+  color: var(--main-text, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.productdescription2 p {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  color: var(--main-text, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product-preorder2 {
+  position: relative;
+  top: -37px;
+  right: -212px;
+  border-radius: 1px;
+border: 2px solid var(--main-text, #FFF);
+background: var(--main-brand-green, #023439);
+color: var(--main-text, #FFF);
+text-align: center;
+font-family: "IBM Plex Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+height: 35px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+transition: 0.3s ease-out;
+}
+
+.discoverproduct {
+  position: relative;
+  display: flex;
+width: 268px;
+height: 46px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 1px;
+border: 3px solid var(--main-text, #FFF);
+background: var(--main-brand-green, #023439);
+margin: 0 auto;
+bottom: -20px;
+color: var(--main-text, #FFF);
+text-align: center;
+font-family: "IBM Plex Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+transition: 0.3s ease-out;
+}
+
+.discoverproduct:hover,
+.product-preorder:hover,
+.product-preorder2:hover {
+  border-radius: 1px;
+  border: 1px solid var(--main-brand-green, #023439);
+  background: var(--main-text, #fff);
+  color: black;
+  cursor: pointer;
+}
+
+.discoverproduct:active,
+.product-preorder:active,
+.product-preorder2:active {
+  border-radius: 1px;
+  border: 2px solid var(--main-text, #fff);
+  background: var(--main-brand-orange, #ed4e0a);
+  color: #fff;
+}
