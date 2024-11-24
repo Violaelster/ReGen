@@ -69,7 +69,7 @@ span {
 }
 
 .search {
-  margin-right: 800px;
+  margin: 59px 600px 14px auto;
 }
 
 .hero {
@@ -408,7 +408,7 @@ p {
   }
 
   .search {
-    margin-right: auto;
+   margin: 59px auto -10px auto;
   }
 
   .logo {
