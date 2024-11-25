@@ -136,6 +136,7 @@
       line-height: normal;
       left: 17px;
       top: 20px;
+      margin: 0;
     }
   
     .countdown-date {
@@ -148,6 +149,7 @@
       line-height: normal;
       top: 55px;
       left: 17px;
+      margin: 0;
     }
   
     .vertical-line {

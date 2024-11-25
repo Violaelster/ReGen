@@ -18,6 +18,7 @@ body {
 
 main {
   min-height: 100vh;
+  background-color: #e7ebee;
 }
 .background-container {
   margin-top: -305px;
@@ -72,9 +73,6 @@ span {
   margin: 50px auto 17px 16px;
 }
 
-.search {
-  margin-right: 800px;
-}
 
 .hero {
   display: flex;
@@ -115,7 +113,7 @@ nav label:hover {
 }
 
 .links-container a,
-p {
+.links-container p {
   box-sizing: border-box;
   height: auto;
   display: flex;
@@ -259,13 +257,13 @@ p {
   .links-container {
     top: 120px;
     right: -105%;
-    width: 100vw;
+    width: 96vw;
     height: 389px;
     padding: 0;
   }
 
   .links-container a,
-  p {
+  .links-container p {
     box-sizing: border-box;
     height: auto;
     display: flex;
@@ -348,9 +346,7 @@ p {
   span {
     font-size: 20px;
   }
-  .search {
-    margin-right: auto;
-  }
+  
   nav label:hover {
     color: #ed4e0a;
   }
@@ -411,9 +407,6 @@ p {
     display: none;
   }
 
-  .search {
-    margin-right: auto;
-  }
 
   .logo {
     display: flex;
