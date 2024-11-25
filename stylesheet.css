@@ -109,7 +109,7 @@ nav label:hover {
 }
 
 .links-container a,
-p {
+.links-container p {
   box-sizing: border-box;
   height: auto;
   display: flex;
@@ -259,7 +259,7 @@ p {
   }
 
   .links-container a,
-  p {
+  .links-container p {
     box-sizing: border-box;
     height: auto;
     display: flex;

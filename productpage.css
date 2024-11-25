@@ -87,6 +87,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 0;
 }
 
 .product-preorder {
@@ -152,6 +153,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 0;
 }
 
 .product-preorder2 {
@@ -281,6 +283,7 @@
     font-style: normal;
     font-weight: 300;
     top: 20px;
+    margin: 0;
   }
 
   .product-preorder svg {
@@ -340,6 +343,7 @@
     font-style: normal;
     font-weight: 300;
     top: 20px;
+    margin: 0;
   }
 
   .product-preorder2 svg {
@@ -418,6 +422,7 @@
     font-weight: 300;
     line-height: normal;
     left: 20px;
+    margin: 0;
   }
 
   .product-preorder4 svg {
@@ -497,6 +502,7 @@
     font-weight: 300;
     line-height: normal;
     left: 20px;
+    margin: 0;
   }
 
   .product-preorder3 svg {
@@ -604,6 +610,7 @@
     font-style: normal;
     font-weight: 300;
     top: 20px;
+    margin: 0;
   }
 
   .product-preorder svg {
@@ -664,6 +671,7 @@
     font-style: normal;
     font-weight: 300;
     top: 20px;
+    margin: 0;
   }
 
   .product-preorder2 svg {
@@ -743,6 +751,7 @@
     font-weight: 300;
     line-height: normal;
     left: 20px;
+    margin: 0;
   }
 
   .product-preorder4 svg {
@@ -823,6 +832,7 @@
     font-weight: 300;
     line-height: normal;
     left: 20px;
+    margin: 0;
   }
 
   .product-preorder3 svg {
