@@ -225,7 +225,7 @@
   grid-row: 1/7;
   grid-column: 13;
   height: 300px;
-  width: 2px;
+  width: 1px;
   margin-top: 20px;
 }
 
@@ -306,6 +306,137 @@ line-height: normal;
   margin: 0;
   width: 105px;
   height: 150px;
+}
+
+}
+
+@media (min-width:1400px){
+  .regen-desc2,
+.regen-desc3,
+.regen-desc4,
+.arrow-down,
+.arrow-down2 {
+  display: none;
+}
+
+.regenerate-body {
+  height: 88vh;
+}
+
+.regenerate-container {
+  height: 88vh;
+  padding: 122px 42px 120px 86px;
+}
+
+.regenerate {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+  max-height: 88vh;
+}
+
+.regenerate-container h1 {
+  font-size: 6rem;
+  text-wrap: nowrap;
+}
+
+.regenerate-container strong {
+  font-size: 6rem;
+}
+
+.regen-title {
+  grid-row: 1/10;
+  grid-column: 1/4;
+}
+.regen-undertitle {
+  font-size: 2.5rem;
+  grid-row: 5/10;
+  grid-column: 1/4;
+  font-weight: 700;
+}
+
+.regen-desc {
+  font-size: 1.75rem;
+  grid-row: 8/15;
+  grid-column: 1/13;
+  font-weight: 400;
+}
+
+.regen-line {
+  grid-row: 1/7;
+  grid-column: 13;
+  height: 423px;
+  width: 1px;
+  margin-top: 20px;
+}
+
+.regen-button {
+  height: 95px;
+padding: 10px 20px;
+grid-row: 15/24;
+  grid-column: 1/11;
+  font-size: 2.5rem;
+}
+
+.regen-desc5,
+.regen-desc6,
+.regen-desc7,
+.arrow-down3,
+.arrow-down4 {
+  display: grid;
+  margin: 0;
+}
+
+.regen-desc5 {
+  margin-top: 20px;
+font-size: 3.125rem;
+  grid-row: 1/10;
+  grid-column: 14/20;
+  text-wrap: nowrap;
+
+}
+
+.regen-desc6 {
+  color: var(--main-text, var(--Color-7, #FFF));
+font-family: "IBM Plex Sans";
+font-size: 3.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  grid-row: 8/20;
+  grid-column: 22/24;
+  justify-self: center;
+}
+
+.regen-desc7 {
+font-size: 3.125rem;
+  grid-row: 16/20;
+  grid-column: 15/20;
+  text-wrap: nowrap;
+}
+
+.arrow-down3{
+  display: grid;
+  grid-row: 4/10;
+  grid-column: 16/21;
+ justify-self: unset;
+  margin: 0;
+  width: 214px;
+  height: 180px;
+}
+
+.arrow-down4{
+  display: grid;
+  grid-row: 5/24;
+  grid-column: 21/24;
+  align-self: center;
+  width: 160px;
+  height: 205px;
+}
+
+.regen-button svg {
+  width: 40px;
+  height: 41px;
 }
 
 }
