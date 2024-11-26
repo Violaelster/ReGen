@@ -1,4 +1,6 @@
 
+console.log("Scriptet laddades korrekt!");
+
 document.addEventListener("scroll", function () {
   const nav = document.querySelector("nav");
   if (window.scrollY > 0) {
@@ -41,19 +43,20 @@ document.addEventListener("scroll", function () {
   startCountdown(targetDate);
 
 
-
- 
-// Referenser till knappar och språkrutan
-const languageBtn = document.getElementById("languageBtn");
-const languageBox = document.getElementById("languageBox");
-const backBtn = document.getElementById("backBtn");
-
-// Öppna språkrutan när språkknappen klickas
-languageBtn.addEventListener("click", () => {
-  languageBox.style.display = "block";
-});
-
-// Stäng språkrutan när tillbaka-knappen klickas
-backBtn.addEventListener("click", () => {
-  languageBox.style.display = "none";
-});
+/* Nyhetsbrev */
+  const submitBtn = document.getElementById("submitBtn");
+  const emailInput = document.getElementById("emailInput");
+  const consentCheckbox = document.getElementById("consentCheckbox");
+  
+  submitBtn.addEventListener("click", (e) => {
+    e.preventDefault(); // Förhindrar formulärets standardbeteende
+  
+    if (!consentCheckbox.checked) {
+      alert("Du måste godkänna användarvillkoren!");
+      return;
+    }
+  
+    emailInput.value = ""; // Rensar fältet efter skickning
+    submitBtn.style.backgroundColor = "#005a2f"; // Ändrar färgen till en grönare nyans
+  });
+  

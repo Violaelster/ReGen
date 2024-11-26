@@ -1,0 +1,103 @@
+.newsletter-section {
+    max-width: 400px; /* Begränsa bredden för sektionen */
+    margin: 0 auto; /* Centrera sektionen på sidan */
+    padding: 20px; /* Lägger till avstånd runt sektionen */
+  }
+  
+  .newsletter-title {
+    text-align: center;
+    font-size: 1.8rem; /* Anpassa efter behov */
+    margin: 0 0 10px;
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-orange {
+    color: orange; /* Lägg till din exakta färgkod */
+  }
+  
+  .newsletter-subtitle,
+  .newsletter-description {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Formulär */
+  .newsletter-form {
+    margin-top: 20px;
+  }
+  
+  .email-container {
+    display: flex;
+    gap: 10px; /* Mellanrum mellan fält och knapp */
+  }
+  
+  .email-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .submit-button {
+    background-color: orange; /* Lägg in exakt färg */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .submit-arrow {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px; /* Justera efter behov */
+  }
+  
+  /* Kryssruta */
+  .consent-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+  
+  .consent-container input[type="checkbox"] {
+    transform: scale(1.2); /* Gör kryssrutan större */
+    cursor: pointer;
+  }
+  
+  .policy-link,
+  .terms-link {
+    color: orange; /* Lägg till din exakta färgkod */
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Galleri */
+  .gallery-title {
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Två bilder per rad */
+    gap: 10px; /* Lägg in avstånd mellan bilder */
+    margin-top: 10px;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    aspect-ratio: 1; /* Håll bilder kvadratiska */
+    object-fit: cover;
+    border-radius: 5px; /* Rundade hörn */
+  }
