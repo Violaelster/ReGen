@@ -158,54 +158,6 @@
   
 }
 
-/* Språkruta */
-.language-box {
-  display: none; /* Dold tills den visas med JavaScript */
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 300px;
-  background-color: #f0f0f0;
-  color: #002a2f;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-  /* Tillbaka-knapp */
-.back-button {
-  background: none;
-  border: none;
-  color: #002a2f;
-  font-size: 16px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-/* Språkval */
-.language-option {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.language-option input[type="checkbox"] {
-  margin-right: 10px;
-  transform: scale(1.5); /* Gör checkboxarna större */
-  cursor: pointer;
-}
-
-/* SVG-figur */
-.character {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.character-svg {
-  width: 100px;
-  height: auto;
-}
 
 
 
