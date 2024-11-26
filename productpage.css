@@ -1,5 +1,4 @@
 .productpage-container {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +63,7 @@
   width: 100%;
   height: 58px;
   margin: 0;
-  top: 0px;
+  top: -40px;
 }
 
 .productdescription h3 {
@@ -231,7 +230,8 @@
 }
 
 .products3,
-.products4 {
+.products4,
+.products {
   display: none;
 }
 
@@ -267,7 +267,7 @@
 .pantsfront1 {
   position: relative;
   margin: 0;
-  top: 0px;
+  top: -40px;
   width: 100%;
   height: 168px;
 }
@@ -279,7 +279,7 @@
 .transition {
   position: relative;
   margin: 0;
-  top: 50px;
+  top: 0px;
   left: 300px;
   height: 40px;
   width: 40px;
@@ -445,6 +445,7 @@ object-fit: cover;
   }
 
   .products {
+    display: block;
     position: relative;
     width: 49%;
     height: 670px;
@@ -774,6 +775,7 @@ object-fit: cover;
   }
 
   .products {
+    display: block;
     position: relative;
     width: 49%;
     max-width: 722px;
@@ -984,7 +986,7 @@ object-fit: cover;
     height: 670px;
     flex-shrink: 0;
     left: 745px;
-    top: -1325px;
+    top: -1360px;
   }
 
   .products-container3 img {
@@ -1079,5 +1081,8 @@ object-fit: cover;
     margin: 0 auto;
     left: 375px;
     top: 100px;
+  }
+  .thecard {
+    display:none;
   }
 }
