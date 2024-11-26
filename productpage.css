@@ -54,6 +54,7 @@
 .products-container img {
   width: 100%;
   height: 168px;
+  object-fit: cover;
 }
 
 .productdescription {
@@ -264,6 +265,7 @@
   .products-container img {
     width: 100%;
     height: 507px;
+    object-fit: cover;
   }
 
   .productdescription {

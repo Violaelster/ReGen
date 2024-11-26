@@ -170,6 +170,21 @@
   display: none;
 }
 
+.regen-button:hover {
+  border-radius: 1px;
+  border: 2px solid #023439;
+  background: var(--main-text, #fff);
+  color: black;
+  cursor: pointer;
+}
+
+.regen-button:active {
+  border-radius: 1px;
+  border: 2px solid var(--main-text, #fff);
+  background: var(--main-brand-orange, #ed4e0a);
+  color: #fff;
+}
+
 @media (min-width:1000px){
   .regen-desc2,
 .regen-desc3,
@@ -308,6 +323,21 @@ line-height: normal;
   height: 150px;
 }
 
+.regen-button:hover {
+  border-radius: 1px;
+  border: 2px solid #023439;
+  background: var(--main-text, #fff);
+  color: black;
+  cursor: pointer;
+}
+
+.regen-button:active {
+  border-radius: 1px;
+  border: 2px solid var(--main-text, #fff);
+  background: var(--main-brand-orange, #ed4e0a);
+  color: #fff;
+}
+
 }
 
 @media (min-width:1400px){
@@ -437,6 +467,21 @@ font-size: 3.125rem;
 .regen-button svg {
   width: 40px;
   height: 41px;
+}
+
+.regen-button:hover {
+  border-radius: 1px;
+  border: 2px solid #023439;
+  background: var(--main-text, #fff);
+  color: black;
+  cursor: pointer;
+}
+
+.regen-button:active {
+  border-radius: 1px;
+  border: 2px solid var(--main-text, #fff);
+  background: var(--main-brand-orange, #ed4e0a);
+  color: #fff;
 }
 
 }
