@@ -1,4 +1,5 @@
 .productpage-container {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +54,7 @@
 
 .products-container img {
   width: 100%;
-  height: 168px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -63,7 +64,7 @@
   width: 100%;
   height: 58px;
   margin: 0;
-  top: -5px;
+  top: 0px;
 }
 
 .productdescription h3 {
@@ -116,11 +117,10 @@
 
 .products2 {
   position: relative;
-  width: 354px;
+  width: 356px;
   height: 220px;
   flex-shrink: 0;
-  left: 5px;
-  top: 30px;
+  top: 10px;
 }
 
 .productdescription2 {
@@ -194,7 +194,7 @@
   border: 3px solid var(--main-text, #fff);
   background: var(--main-brand-green, #023439);
   margin: 0 auto;
-  bottom: -20px;
+  bottom: -10px;
   color: var(--main-text, #fff);
   text-align: center;
   font-family: "IBM Plex Sans";
@@ -209,7 +209,8 @@
 .product-preorder:hover,
 .product-preorder2:hover,
 .product-preorder3:hover,
-.product-preorder4:hover {
+.product-preorder4:hover,
+.product-preorderback:hover {
   border-radius: 1px;
   border: 1px solid var(--main-brand-green, #023439);
   background: var(--main-text, #fff);
@@ -221,7 +222,8 @@
 .product-preorder:active,
 .product-preorder2:active,
 .product-preorder3:active,
-.product-preorder4:active {
+.product-preorder4:active,
+.product-preorderback:active {
   border-radius: 1px;
   border: 2px solid var(--main-text, #fff);
   background: var(--main-brand-orange, #ed4e0a);
@@ -231,6 +233,195 @@
 .products3,
 .products4 {
   display: none;
+}
+
+
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+    left: 1px;
+  width: 100%;
+  height: 220px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: #000;
+  z-index: 1;
+}
+
+.pantsfront1 {
+  position: relative;
+  margin: 0;
+  top: 0px;
+  width: 100%;
+  height: 168px;
+}
+.pantsfront1 img {
+  height: 168px;
+  margin: 0;
+}
+
+.transition {
+  position: relative;
+  margin: 0;
+  top: 50px;
+  left: 300px;
+  height: 40px;
+  width: 40px;
+  z-index: 2;
+}
+
+.transition2 {
+  position: relative;
+  margin: 0;
+  left: 300px;
+  height: 40px;
+  width: 40px;
+  z-index: 20;
+  top: 0px;
+}
+
+ .thecard.flip{
+  transform: rotateY(180deg);
+}
+
+/* #update:checked ~ .theback {
+  transform: rotateY(180deg);
+} */
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  width: 356px;
+  height: 220px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+  margin: 0;
+  z-index: 1;
+  
+}
+
+.pantsfront {
+  position: relative;
+  width: 206px;
+height: 168px;
+margin: 0;
+left: 150px;
+top: -40px;
+
+}
+
+.pantsfront img{
+  position: relative;
+  width: 206px;
+height: 168px;
+margin: 0;
+object-fit: cover;
+}
+
+.pantsback {
+  position: relative;
+  width: 150px;
+max-height: 84px;
+margin: 0;
+top: -208px;
+
+}
+.pantsback img{
+  position: relative;
+  width: 150px;
+height: 84px;
+object-fit: cover;
+}
+
+.pantszoom {
+  position: relative;
+  width: 150px;
+height: 84px;
+margin: 0;
+top: -208px;
+}
+
+.pantszoom img{
+  width: 150px;
+height: 84px;
+margin: 0;
+object-fit: cover;
+}
+
+.productdescriptionback {
+  position: relative;
+  background-color: #023439;
+  width: 100%;
+  height: 58px;
+  margin: 0;
+  top: -210px;
+}
+
+.productdescriptionback h3 {
+  position: relative;
+  left: -120px;
+  color: var(--main-text, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.productdescriptionback p {
+  position: relative;
+  top: 5px;
+  left: -145px;
+  color: var(--main-text, #fff);
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.product-preorderback {
+  position: relative;
+  top: -37px;
+  right: -212px;
+  border-radius: 1px;
+  border: 2px solid var(--main-text, #fff);
+  background: var(--main-brand-green, #023439);
+  color: var(--main-text, #fff);
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  height: 35px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease-out;
 }
 
 @media (min-width: 600px) {

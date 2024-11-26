@@ -59,4 +59,19 @@ document.addEventListener("scroll", function () {
     emailInput.value = ""; // Rensar fältet efter skickning
     submitBtn.style.backgroundColor = "#005a2f"; // Ändrar färgen till en grönare nyans
   });
+
+/* Flip card */
+  
+const flipCardContainer = document.querySelector(".transition");
+const flipped = document.querySelector(".thecard");
+flipCardContainer.addEventListener("click", function () {
+  flipped.classList.toggle("flip");
+});
+
+const flipCard = document.querySelector(".transition2");
+flipCard.addEventListener("click", function () {
+  flipped.classList.toggle("flip");
+});
+
+
   
