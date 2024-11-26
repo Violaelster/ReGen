@@ -452,6 +452,7 @@
     line-height: normal;
     top: -80px;
     right: -71%;
+    transition: 0.3s ease-out;
   }
 
   .products3 {
@@ -532,6 +533,7 @@
     line-height: normal;
     top: -80px;
     right: -71%;
+    transition: 0.3s ease-out;
   }
 
   .discoverproduct {

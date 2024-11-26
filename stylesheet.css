@@ -46,7 +46,8 @@ nav {
   height: 127px;
   margin: 0 auto;
   z-index: 90;
-  min-width: 100%;
+  width: 100%;
+  max-width: 1512px;
   
 }
 
@@ -120,7 +121,6 @@ nav label:hover {
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-  margin: 0;
   transition: 0.3s ease-out;
 }
 
@@ -175,7 +175,7 @@ nav label:hover {
 }
 
 #check:checked ~ .links-container {
-  right: 0;
+  right: 58px;
 }
 
 .main-bottom {
@@ -257,9 +257,9 @@ nav label:hover {
   .links-container {
     top: 120px;
     right: -105%;
-    width: 96vw;
+    width: 100vw;
     height: 389px;
-    padding: 0;
+    padding: 20px;
   }
 
   .links-container a,
@@ -270,7 +270,6 @@ nav label:hover {
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-    margin: 0;
     transition: 0.3s ease-out;
   }
 
@@ -283,11 +282,11 @@ nav label:hover {
     width: 280px;
     height: 1px;
     background: #767676;
-    margin: 0 auto 0 34px;
+    margin: 0 auto 0 0px;
   }
 
   .links-container a {
-    margin: 8px auto 5px 34px;
+    margin: 8px auto 5px 0px;
     color: #023439;
     font-family: "IBM Plex Sans";
     font-size: 16px;
@@ -298,7 +297,7 @@ nav label:hover {
   }
 
   .language {
-    margin: auto auto 10px 34px;
+    margin: auto auto 10px 0px;
     color: #023439;
     font-family: "IBM Plex Sans";
     font-size: 16px;
@@ -309,13 +308,14 @@ nav label:hover {
   }
 
   .link-menu {
-    margin: 36px auto 28px 34px;
+    margin: 0 auto 25px 0px;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 }
+
 
 
 /* MEDIA QUERIES */
@@ -426,6 +426,10 @@ nav label:hover {
 
   .language:hover {
     color: #ed4e0a;
+  }
+
+  #check:checked ~ .links-container {
+    right: 0;
   }
 }
 
