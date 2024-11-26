@@ -39,3 +39,21 @@ document.addEventListener("scroll", function () {
 
   // Start the countdown
   startCountdown(targetDate);
+
+
+
+ 
+// Referenser till knappar och språkrutan
+const languageBtn = document.getElementById("languageBtn");
+const languageBox = document.getElementById("languageBox");
+const backBtn = document.getElementById("backBtn");
+
+// Öppna språkrutan när språkknappen klickas
+languageBtn.addEventListener("click", () => {
+  languageBox.style.display = "block";
+});
+
+// Stäng språkrutan när tillbaka-knappen klickas
+backBtn.addEventListener("click", () => {
+  languageBox.style.display = "none";
+});

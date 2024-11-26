@@ -13,7 +13,7 @@ footer {
 } /* Klar */
 
 .footer-top {
-  height: 24px;
+  height: 48px;
 } /* Klar */
 
 .footer-content h3 {
@@ -125,7 +125,7 @@ li {
   }
 
   .footer-top {
-      height: 4px;
+      height: 24px;
   }
 
   .footer-content h3 {
