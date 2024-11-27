@@ -178,6 +178,10 @@
   color: #fff;
 }
 
+.gif {
+  display: none;
+}
+
 @media (min-width:1000px){
   .regen-desc2,
 .regen-desc3,
@@ -331,6 +335,10 @@ line-height: normal;
   color: #fff;
 }
 
+.gif{
+  display: none;
+}
+
 }
 
 @media (min-width:1400px){
@@ -349,7 +357,7 @@ line-height: normal;
 
 .regenerate-container {
   max-height: 88vh;
-  padding: 50px 42px 120px 86px;
+  padding: 80px 42px 100px 86px;
 }
 
 .regenerate {
