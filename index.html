@@ -956,6 +956,7 @@
     </section>
     <!-- Slutet på teknologi -->
 
+   <div class="newsletter-top"></div>
     <section class="newsletter-section">
       <!-- Rubrik -->
       <h1 class="newsletter-title">
@@ -964,7 +965,7 @@
       </h1>
       <p class="newsletter-subtitle">Vill du bli en del av våra event?</p>
       <p class="newsletter-description">
-        Skriv upp dig på vårt nyhetsbrev och få 10% rabatt på ditt första köp
+        Skriv upp dig på vårt nyhetsbrev <br> och få 10% rabatt på ditt första köp
       </p>
 
       <!-- Nyhetsbrevsformulär -->
@@ -978,25 +979,29 @@
             required
           />
           <button type="submit" id="submitBtn" class="submit-button">
-            <svg class="submit-arrow"></svg>
             Skicka
+            <svg class="submit-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M4.16666 10.5H15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 4.66663L15.8333 10.5L10 16.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
           </button>
         </div>
         <div class="consent-container">
           <input type="checkbox" id="consentCheckbox" required />
-          <label for="consentCheckbox">
-            Jag godkänner användandet av ReGens
+          <div class="consentCheckbox">
+            Jag godkänner användandet av <br> ReGens
             <a href="#" class="policy-link">integritetspolicy</a> och
             <a href="#" class="terms-link">användarvillkor</a>*
-          </label>
+          </div>
         </div>
       </form>
 
       <!-- Bildgalleri -->
       <h2 class="gallery-title">Våra senaste event</h2>
       <div class="gallery">
-        <img src="image1.jpg" alt="Bild 1" class="gallery-image" />
-        <img src="image2.jpg" alt="Bild 2" class="gallery-image" />
+        <img src="/images/event3.svg" alt="Bild 1" class="gallery-image" />
+        <img src="/images/mobile.svg" alt="Bild 2" class="gallery-image" />
+        <img src="/images/image14.svg" alt="Bild 3" class="gallery-image third-image" />
       </div>
     </section>
 
@@ -1181,25 +1186,7 @@
           </button>
         </div>
 
-        <!-- Språkruta -->
-        <div id="languageBox" class="language-box">
-          <button id="backBtn" class="back-button">← Tillbaka</button>
-          <h2 class="language-title">SPRÅK</h2>
-          <div class="language-option">
-            <input type="checkbox" id="swedish" />
-            <label for="swedish">Svenska</label>
-          </div>
-          <div class="language-option">
-            <input type="checkbox" id="english" />
-            <label for="english">English</label>
-          </div>
-          <div class="character">
-            <!-- Placera din SVG för figuren här -->
-            <img src="yeti.svg" alt="Yeti" class="character-svg" />
-          </div>
-        </div>
-      </div>
-    </footer>
+       
 
     <script src="script.js" defer></script>
   </body>
