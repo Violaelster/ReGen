@@ -834,8 +834,13 @@
     right: -65%;
   }
 
+  .products2 {
+    display: block;
+    max-width: 722px;
+  }
+
   .products-container2 img {
-    width: 100%;
+    max-width: 100%;
     height: 507px;
   }
 
@@ -855,7 +860,7 @@
     background-color: #023439;
     width: 100%;
     height: 163px;
-    top: 0;
+    top: -5px;
   }
 
   .productdescription2 h3 {
