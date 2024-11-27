@@ -178,9 +178,7 @@
   color: #fff;
 }
 
-.gif {
-  display: none;
-}
+
 
 @media (min-width:1000px){
   .regen-desc2,
@@ -335,9 +333,6 @@ line-height: normal;
   color: #fff;
 }
 
-.gif{
-  display: none;
-}
 
 }
 
