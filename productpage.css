@@ -1105,6 +1105,10 @@
     z-index: 1;
   }
 
+  .expand:hover {
+    cursor: pointer;
+  }
+
   .additional-content {
     background-color: #023439;
     position: absolute;
@@ -1206,6 +1210,10 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+
+  .expand-back:hover {
+    cursor: pointer;
   }
 
   .productdescription3-back {
