@@ -764,11 +764,12 @@
 
   .products-container h1 {
     font-size: 96px;
-    top: 0px;
+    top: 20px;
   }
 
   .products-container h4 {
     font-size: 40px;
+    left: 20px;
   }
 
   .products {
