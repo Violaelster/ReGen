@@ -9,18 +9,18 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.25rem;
-  padding: 3.7% 13.6% 4.27% 6.4%;
+  padding: 0.7rem 3.19rem 1rem 1.5rem;
 } /* Klar */
 
 .footer-top {
-  height: 48px;
+  height: 24px;
 } /* Klar */
 
 .footer-content h3 {
   color: #ffffff;
   font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0.5rem 0;
+  font-weight: 600;
+  margin: 0 0 3px 0;
 } /* Klar */
 
 .footer-section {
@@ -99,7 +99,6 @@ li {
   border-radius: 0.0625rem;
   border: 1px solid var(--text-main, #fff);
   background-color: #023439;
-  margin-bottom: 0.75rem;
 } /* Klar */
 
 .footer-button svg {
@@ -109,7 +108,7 @@ li {
 
 .footer-yeti {
   position: absolute;
-  bottom: 15%; /* Anpassar sig efter höjden av det relativa föräldraelementet */
+  bottom: 17%; /* Anpassar sig efter höjden av det relativa föräldraelementet */
   right: -7%; /* Behåller den ursprungliga designen */
   width: 90px;
 } /* Klar */
@@ -167,7 +166,7 @@ li {
       gap: 0.625rem;
       border-radius: 0.3125rem;
       border: 2px solid var(--main-text, #FFF);
-      margin-bottom: 0.97rem;
+      
   }
 
   .footer-button svg {
