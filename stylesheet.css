@@ -28,7 +28,7 @@ main {
   height: 100vh;
   overflow: hidden;
   z-index: 1;
-  background: url("/images/hero.png") no-repeat center center;
+  background: url("images/hero.png") no-repeat center center;
   background-size: cover; /* Ensures the image covers the container */
 }
 
@@ -176,7 +176,7 @@ nav label:hover {
 }
 
 #check:checked ~ .links-container {
-  right: 58px;
+  right: 0;
 }
 
 .main-bottom {
@@ -366,7 +366,7 @@ nav label:hover {
     height: 100vh;
     overflow: hidden;
     z-index: 1;
-    background: url("/images/hero.png") no-repeat center center;
+    background: url("images/hero.png") no-repeat center center;
     background-size: cover; /* Ensures the image covers the container */
   }
 
