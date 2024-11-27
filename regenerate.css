@@ -62,13 +62,6 @@
   margin: 0;
 }
 
-/* .regenerate2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: 10px;
-} */
-
 .arrow-down {
   grid-row: 2;
   grid-column: 5/7;
@@ -184,6 +177,8 @@
   background: var(--main-brand-orange, #ed4e0a);
   color: #fff;
 }
+
+
 
 @media (min-width:1000px){
   .regen-desc2,
@@ -338,6 +333,7 @@ line-height: normal;
   color: #fff;
 }
 
+
 }
 
 @media (min-width:1400px){
@@ -351,11 +347,12 @@ line-height: normal;
 
 .regenerate-body {
   height: 88vh;
+  
 }
 
 .regenerate-container {
-  height: 88vh;
-  padding: 122px 42px 120px 86px;
+  max-height: 88vh;
+  padding: 80px 42px 100px 86px;
 }
 
 .regenerate {
@@ -375,19 +372,19 @@ line-height: normal;
 }
 
 .regen-title {
-  grid-row: 1/10;
+  grid-row: 1;
   grid-column: 1/4;
 }
 .regen-undertitle {
   font-size: 2.5rem;
-  grid-row: 5/10;
+  grid-row: 2;
   grid-column: 1/4;
   font-weight: 700;
 }
 
 .regen-desc {
   font-size: 1.75rem;
-  grid-row: 8/15;
+  grid-row: 4/10;
   grid-column: 1/13;
   font-weight: 400;
 }
@@ -403,7 +400,7 @@ line-height: normal;
 .regen-button {
   height: 95px;
 padding: 10px 20px;
-grid-row: 15/24;
+grid-row: 8/15;
   grid-column: 1/11;
   font-size: 2.5rem;
 }
@@ -420,7 +417,7 @@ grid-row: 15/24;
 .regen-desc5 {
   margin-top: 20px;
 font-size: 3.125rem;
-  grid-row: 1/10;
+  grid-row: 1;
   grid-column: 14/20;
   text-wrap: nowrap;
 
@@ -433,21 +430,21 @@ font-size: 3.125rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-  grid-row: 8/20;
+  grid-row: 4;
   grid-column: 22/24;
   justify-self: center;
 }
 
 .regen-desc7 {
 font-size: 3.125rem;
-  grid-row: 16/20;
+  grid-row: 9;
   grid-column: 15/20;
   text-wrap: nowrap;
 }
 
 .arrow-down3{
   display: grid;
-  grid-row: 4/10;
+  grid-row: 2/10;
   grid-column: 16/21;
  justify-self: unset;
   margin: 0;
@@ -457,7 +454,7 @@ font-size: 3.125rem;
 
 .arrow-down4{
   display: grid;
-  grid-row: 5/24;
+  grid-row: 4/15;
   grid-column: 21/24;
   align-self: center;
   width: 160px;
