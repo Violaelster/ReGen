@@ -418,6 +418,10 @@
   transition: 0.3s ease-out;
 }
 
+.gif {
+  opacity: 0;
+}
+
 @media (min-width: 600px) {
   .productpage-container {
     position: relative;
@@ -744,6 +748,9 @@
     margin: 0 auto;
     left: 480px;
     top: 100px;
+  }
+  .gif {
+    opacity: 0;
   }
 }
 
