@@ -1,64 +1,101 @@
 .newsletter-section {
-    max-width: 400px; /* Begränsa bredden för sektionen */
+    background: var(--main-brand-green, #023439);
     margin: 0 auto; /* Centrera sektionen på sidan */
     padding: 20px; /* Lägger till avstånd runt sektionen */
+    
   }
   
   .newsletter-title {
     text-align: center;
-    font-size: 1.8rem; /* Anpassa efter behov */
     margin: 0 0 10px;
+    text-align: left;
+    max-width:12rem;
   }
   
   .title-white {
     color: white;
+    font-size: 2rem;
+    font-style: normal;
+font-weight: 700;
+line-height: normal;
+
   }
   
   .title-orange {
-    color: orange; /* Lägg till din exakta färgkod */
+    color: var(--main-brand-orange, #ED4E0A); /* Lägg till din exakta färgkod */
+    font-size: 2rem;
+    font-style: normal;
+font-weight: 700;
+line-height: normal;
+
   }
   
   .newsletter-subtitle,
   .newsletter-description {
-    text-align: center;
+    text-align: left;
+    color:white;
     margin: 10px 0;
+    font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+max-width:16rem;
+
   }
   
   /* Formulär */
   .newsletter-form {
     margin-top: 20px;
+    max-width: 15rem;
   }
   
   .email-container {
     display: flex;
-    gap: 10px; /* Mellanrum mellan fält och knapp */
+    
   }
   
   .email-input {
     flex: 1;
-    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    
+    font-size: 13px;
+    font-weight: 300;
+    border-top-left-radius: 2px;  
+    border-bottom-left-radius: 2px;
+    display: flex;
+width: 9.5rem;
+height: 1.9375rem;
+padding: 0.625rem 0.3125rem;
+align-items: center;
+gap: 0.625rem;
+flex-shrink: 0;
   }
   
   .submit-button {
-    background-color: orange; /* Lägg in exakt färg */
+    border-radius: 0rem 0.125rem 0.125rem 0rem;
+    background: var(--main-brand-orange, #ED4E0A);
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
+    border-top-right-radius: 2px;  
+    border-bottom-right-radius: 2px;
+    font-size: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+width: 4.6875rem;
+height: 1.9375rem;
+padding: 0.625rem;
+
+gap: 0.125rem;
+flex-shrink: 0;
   }
   
   .submit-arrow {
-    width: 14px;
-    height: 14px;
-    margin-right: 5px; /* Justera efter behov */
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
   }
   
   /* Kryssruta */
@@ -77,7 +114,7 @@
   
   .policy-link,
   .terms-link {
-    color: orange; /* Lägg till din exakta färgkod */
+    color: white;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -99,5 +136,5 @@
     width: 100%;
     aspect-ratio: 1; /* Håll bilder kvadratiska */
     object-fit: cover;
-    border-radius: 5px; /* Rundade hörn */
+   
   }
