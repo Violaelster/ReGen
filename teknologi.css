@@ -23,7 +23,7 @@
   color: var(--text-main, #fff);
   font-size: 1rem;
   font-weight: 300;
-  max-width: 12rem;
+  
 
 }
 
@@ -46,12 +46,14 @@
 
 .teknik-description {
   text-align: left;
-  
 }
 
+/* klar?? */
+
 .teknik-top {
-  height: 48px;
+  height: 24px;
 }
+/* klar */
 
 .teknik-yeti {
   bottom: 0%;
@@ -60,6 +62,8 @@
   width: 45px;
 }
 
+/* FIXA!! */
+
 .left-column {
   display: flex;
   flex-direction: column;
@@ -67,19 +71,24 @@
   margin: 2.19rem 0.5px 0rem 1.5rem;
 }
 
+/* klar */
+
 .right-column {
   display: flex;
   flex-direction: column;
   flex: 1;
   margin: 0.9rem 2.47rem 1rem 1rem;
-  
 }
+/* klar */
+
 
 .highlight-text {
   color: var(--main-brand-orange, #ed4e0a);
   font-size: 2rem;
   font-weight: 700;
 }
+/* klar */
+
 
 .main-text {
   color: white;
@@ -88,11 +97,16 @@
   font-weight: 600;
   line-height: normal;
 }
+/* klar */
+
 
 .teknologi-h1 {
   margin: 0px;
   max-width: 12rem;
 }
+
+/* klar */
+
 
 .teknik-button svg {
   
@@ -103,6 +117,8 @@
 
   .right-column {
     padding-right: 5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
   }
 
   .teknik {
@@ -136,8 +152,6 @@
     max-width: 600px;
   text-align: right;
   align-self: flex-end;
-
-
   }
 
   .highlight-text {
@@ -153,6 +167,15 @@
   }
   .teknik-description {
     max-width: 20rem;
+  }
+
+  .teknik-top {
+    height: 48px;
+  }
+
+  .left-column {
+    gap: 1.5rem; /* Mellanrum mellan feature-items */
+    margin: 5.19rem 0.75px 0rem 5.75rem
   }
   
   
