@@ -73,5 +73,25 @@ flipCard.addEventListener("click", function () {
   flipped.classList.toggle("flip");
 });
 
+ // Get the expand button and product card
+ const expandButton = document.querySelector('.expand');
+ const productCard = document.querySelector('.products3');
+const expandBackButton = document.querySelector('.expand-back');
+const additionalContent = document.querySelector('.additional-content');
+ // Add click event listener to the expand button
+ expandButton.addEventListener('click', () => {
+     // Toggle the expanded class
+   productCard.classList.toggle('expanded');
+   expandButton.style.opacity = 0;
+   additionalContent.style.zIndex = 5;
+ });
+
+ expandBackButton.addEventListener('click', () => {
+  // Toggle the expanded class
+   productCard.classList.toggle('expanded');
+   expandButton.style.opacity = 1;
+   additionalContent.style.zIndex = -5;
+});
+
 
   
