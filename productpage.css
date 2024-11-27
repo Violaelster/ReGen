@@ -750,7 +750,7 @@
 @media (min-width: 1200px) {
   .productpage-container {
     position: relative;
-    padding: 0 23px 92px 23px;
+    padding: 100px 23px 100px 23px;
     height: 200vh;
   }
   .products-container {
@@ -1091,7 +1091,7 @@
     line-height: normal;
     margin: 0 auto;
     left: 375px;
-    top: 100px;
+    top: 60px;
   }
 
   .thecard {
